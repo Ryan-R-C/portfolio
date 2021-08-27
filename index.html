@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--TO IMPLEMENT: JS PART OF MENU ANCORS
-NEW PROJECTS OF BOOTSTRAP!!!
--->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Home - Ryan Costa</title>
 </head>
 <body>
     <header>
-        <!-- <div id="language">
-            <div id="selected-lang">
-                English
+        <div id="top">
+            <div id="dark-theme-div">
+                <label for="switch">
+                    <input type="checkbox" id="switch">
+                    <span id="theme-changer"></span>
+                </label>
             </div>
-            <ul>
-                <li><a href="">Português</a></li>
-                <li><a href=""></a>Español</li>
-                <li><a href="">Italiano</a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div> -->
+            <div id="language">
+                <div id="selected-lang">
+                    <img src="https://www.countryflags.io/us/flat/32.png" alt="flag" id="select-lang-flag">
+                    <p id="select-lang" class="lang">English</p>
+                </div>
+                <ul>
+                    <li><a id="us" Language="English" class="lang">English</a></li>
+                    <li><a id="br" Language="Português" class="lang">Português</a></li>
+                    <li><a Language="Español" id="es" class="lang">Español</a></li>
+                    <li><a Language="Italiano" id="it" class="lang">Italiano</a></li>
+                </ul>
+            </div>
+        </div>
         <div id="nav-bar">
             <div>
                 <h2>Ryan Costa</h2>
@@ -42,21 +48,22 @@ NEW PROJECTS OF BOOTSTRAP!!!
                         </li>
                     </ul>
                 </nav>
+                </div>
             </div>
-    </div>
     </header>
     <main>
-        <h1>My projects
+        <h1 id="title">My projects
         </h1>
-        <h2>Pillar of Websites</h2>
-        <p>This project, was, basecally, a tutorial of HTML, CSS and JavaScript for beginners. Simple static page.</p>
+        <h2 id="PWTitle">Pillar of Websites</h2>
+        <p id="PWContent">This project, was, basecally, a tutorial of HTML, CSS and JavaScript for beginners. Simple static page.</p>
         <img src="images/pillarsofwebsites.png" alt="other website image">
-        <p>See more clicking <a href="page.html" target="_blank">here</a></p>
+        <p class="readMore">See more clicking <a class="here" href="page.html" target="_blank">here</a></p>
         <hr>
-        <h2>Product Page</h2>
-        <p>I did a product page, for that exemple I made one of my PlayStation, my favorite console. It is completely responsive.</p>
-        <img src="images/controllerpage.png" alt="other website image">
-        <p>See more clicking <a href="ps4.html" target="_blank">here</a></p>
+        <h2 id="PPTitle">Product Page</h2>
+        <p id="PPContent">I did a product page, for that exemple I made one of my PlayStation, my favorite console. It is completely responsive.</p>
+          <img src="images/controllerpage.png" alt="other website image">
+        <p class="readMore">See more clicking <a class="here" href="ps4.html" target="_blank">here</a></p>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

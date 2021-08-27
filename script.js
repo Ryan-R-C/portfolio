@@ -1,8 +1,16 @@
+const html = document.querySelector("html")
+const checkbox = document.querySelector("#switch")
+checkbox.addEventListener('change', function(){
+        html.classList.toggle('dark-theme')
+})
+
 /*Elements that change the language*/
-var LanguageElement = document.querySelector("#language")
-const link = document.querySelectorAll("a")
+const LanguageElement = document.querySelector("#language")
+const link = document.querySelectorAll("a.lang")
 /*All elements that will be "translated" to other language
-OBS.: They must have the same names in data*/
+OBS.: They must have the same id's in data*/
+const selectedLang = document.querySelector("#select-lang")//Get this element to change its content to the selected Lang
+const selectFlag = document.querySelector("#select-lang-flag")
 const title = document.querySelector("#title")
 const PWTitle = document.querySelector("#PWTitle")
 const PWContent = document.querySelector("#PWContent")
@@ -14,10 +22,14 @@ const here = document.querySelectorAll(".here")
 
 link.forEach(element => {
     element.addEventListener('click', () => {
-        //LanguageElement.querySelector("selected-lang").idList.remove("selected-lang")
-        //element.idList.add("selected-lang")
-
+        
         const attributeLang = element.getAttribute("Language")
+        const attributeId = element.getAttribute("id")
+        var contentlang = attributeLang
+        console.log(attributeId)
+
+        selectedLang.textContent = `${attributeLang}`
+        selectFlag.src = `https://www.countryflags.io/${attributeId}/flat/32.png`
 
         title.textContent = data[attributeLang].title
 
@@ -37,45 +49,45 @@ link.forEach(element => {
 });
 const data =
 {
-	"en":
+	"English":
 	{"title":
-        "My projects",
+                "My projects",
 	"PWTitle":
-        "Pillars of Websites",
+                "Pillars of Websites",
 	"PWContent":
-        "This project was basically a tutorial of HTML, CSS and JavaScript for beginners. Simple static responsive page.",
-	"seeMore":
-        "See more clicking ",
+                "This project was basically a tutorial of HTML, CSS and JavaScript for beginners. Simple static responsive page.",
+	"readMore":
+                "See more clicking ",
         "here":
-        "here",    
+                "here",    
 	"PPTitle":
-        "Product Page",
+                "Product Page",
 	"PPContent":
-        "I did a product page, for that exemple I made one of my PlayStation, my favorite console. It is completely responsive."
+                "I did a product page, for that exemple I made one of my PlayStation, my favorite console. It is completely responsive."
     },
-    "pt":
+    "Português":
     {"title":
                 "Meus projetos",
     "PWTitle":
-                "Pilares de sites",
+                "Pilares dos Websites",
     "PWContent":
-                "Este projeto foi basicamente um tutorial de HTML, CSS e JavaScript para iniciantes. Página estática responsiva simples.",
+                "Este projeto foi, basicamente, um tutorial de HTML, CSS e JavaScript para iniciantes. Criada uma página estática e responsiva simples.",
     "readMore":
-                "Veja mais clicando ",
+                "Veja mais clicando",
     "here":
         "aqui",
     "PPTitle":
                 "Página do produto",
     "PPContent":
-                "Eu fiz uma página de produto, por exemplo, fiz um do meu PlayStation, meu console favorito. É totalmente responsivo."
+                "Fiz uma página de produto peguei como exemplo meu PlayStation, meu console favorito. É totalmente responsivo, com o famoso menu hamburguer."
             },
-    "es":
+    "Español":
     {"title":
                 "Mis proyectos",
     "PWTitle":
                 "Pilares de los sitios web",
     "PWContent":
-                "Este proyecto fue básicamente un tutorial de HTML, CSS y JavaScript para principiantes. Página estática sensible simple",
+                "Este proyecto fue básicamente un tutorial de HTML, CSS y JavaScript para principiantes. Página estática sensible simple.",
     "readMore":
                 "Ver más haciendo clic",
     "here":
@@ -83,8 +95,8 @@ const data =
     "PPTitle":
                 "Página del producto",
     "PPContent":
-                "Hice una página de producto, para ese ejemplo hice una de mi PlayStation, mi consola favorita. Es completamente sensible"},
-    "it":
+                "Hice una página de producto, para ese ejemplo hice una de mi PlayStation, mi consola favorita. Es completamente sensible."},
+    "Italiano":
     {"title":
                 "I miei progetti",
     "PWTitle":

@@ -1,9 +1,23 @@
+/*=========
+Responsive navbar
+==========*/
+const navBar = document.querySelector("nav#nav")
+const menuIcon = document.querySelector("img#menu-icon")
+const menuList = document.querySelector("ul#menu-list")
+menuIcon.addEventListener('click', () => {
+    navBar.classList.toggle('active-menu')
+})
+/*=========
+Dark-Theme
+==========*/
 const html = document.querySelector("html")
 const checkbox = document.querySelector("#switch")
 checkbox.addEventListener('change', function(){
         html.classList.toggle('dark-theme')
 })
-
+/*==========
+Language Switcher
+==========*/
 /*Elements that change the language*/
 const LanguageElement = document.querySelector("#language")
 const link = document.querySelectorAll("a.lang")
@@ -77,7 +91,7 @@ const data =
     "here":
         "aqui",
     "PPTitle":
-                "Página do produto",
+                "Página de produto",
     "PPContent":
                 "Fiz uma página de produto peguei como exemplo meu PlayStation, meu console favorito. É totalmente responsivo, com o famoso menu hamburguer."
             },

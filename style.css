@@ -44,7 +44,6 @@ html{
 }
 body{
     font-family: 'Open Sans',Verdana, Tahoma, sans-serif;
-    font-size: 1.23;
     margin: 0;
 }
 
@@ -244,7 +243,7 @@ header ul li a{
     max-width: 900px;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 10px;
+    
     max-height: 32px;
 }
 input[type="checkbox"]{
@@ -283,7 +282,11 @@ input[type="checkbox"]:checked ~ #theme-changer:before{
     transform: translateX(130%);
 }
 
-@media (max-width:600px){
+#menu-icon{
+    display: none;
+}
+
+@media (max-width:722px){
     .cols{
         flex-direction: column;
     }
@@ -292,25 +295,46 @@ input[type="checkbox"]:checked ~ #theme-changer:before{
     }
     main{
         padding: 0;
-        position: relative;
         overflow: hidden;
         width: 100%;
-    }
-    #nav-bar{
-        flex-direction: column;
-        position: relative;
-        overflow: hidden;
-    }
-    nav ul{
-        width: 100%;
-        position: absolute;
-        z-index: 2;
     }
     nav ul li{
         display: block;
+    }    
+   #menu-list{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: var(--main-color);
+        transition: 1.0s;
+        top: 104px;
+        padding: 10px 0;
     }
-    #menu-list{
-        overflow: hidden;
-        transition: 0.5s;
+    #menu-list li{
+        margin: 1.2rem 0;
     }
+    #menu-icon{
+        cursor: pointer;
+        float: right;
+        height: 60px;
+        transform: translateY(10%);
+        display: block;        
+    }
+    #menu-icon:focus{
+        outline: none;
+    }
+    .active-menu #menu-list{
+        display: block;
+        text-align: center;
+    }
+    #language:hover ul{
+        transform: translateX(-21%);
+    }
+
+    
 }
+
+

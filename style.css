@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-
+/*----------The colors in :root makes the style easier to do----------*/
 :root{
     --main-color: #6563ff;
     --almost-black: #011113;
@@ -14,6 +14,7 @@
     --htmlcolor: #f16524;
     --csscolor: #0076be;
 }
+/*----------This class is what makes dark-theme possible----------*/
 .dark-theme:root{
     --almost-black: #f8f8f8;
     --custom-lightblue: #1792d2;
@@ -22,14 +23,14 @@
     --custom-gray:  #d1d1d1;
     --curstom-light-gray:  #111111;
 }
+/*==========
+Main Layout
+==========*/
 body{
     background-color: var(--curstom-light-gray);
     min-width: 100%;
 }
-a{
-    color: var(--almost-black);
-    text-decoration: none;
-}
+
 nav ul{
     list-style: none;
     display: flex;
@@ -50,6 +51,10 @@ body{
 img{
     max-width: 100%;
 }
+/*============
+Main Typograph
+============*/
+
 h1, h2, h3{
     color: var(--almost-black);
     
@@ -62,6 +67,9 @@ h1{
 h1 span{
     color: var(--csscolor);
 }
+h1, h2{
+    color:var(--custom-dark)
+}
 h3{
     font-size: 1.5rem;
     color: rgb(90, 90, 90)
@@ -71,10 +79,21 @@ p{
     margin-top: 0;
     color: var(--almost-black);
 }
+a{
+    color: var(--csscolor);
+    text-decoration: none;
+}
 #main a{
     text-decoration: none;
     color: var(--jscolor);
 }
+
+span{
+    font-weight: bolder;
+}
+/*==========================
+Style of Pillars of Websites
+==========================*/
 #main{
     width: 90%;
     max-width: 900px;
@@ -83,7 +102,7 @@ p{
     background-color: var(--custom-white);
     padding: 3rem;
     box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.226);
-}
+}/*This line is shared in both pages*/
 .cols{
     display: flex;
     text-align: left;
@@ -119,19 +138,14 @@ p{
 .different-colum p span{
     color: var(--jscolor);
 }
-footer{
-    background-color: var(--almost-black);
-    color: var(--custom-white);
-    text-align: center;
-}
-img{
-    max-width: 100%;
-}
+/*=======================================
+Here starts the style of the main project
+=======================================*/
+
+/*----------Header and it's children-----------*/
 header{
-    background-color: var(--custom-white);
     min-width: 100%;
     margin: 0;
-    color: var(--almost-black);
 }
 #nav-bar{
     background-color: var(--custom-dark);
@@ -166,6 +180,24 @@ header ul li a{
     text-decoration: none;
     color: var(--dontchange-white)
 }
+#menu-icon{
+    display: none;
+}
+/*-----------------------------------------------
+Top layout and formatation that contains language switcher and theme-changer
+-----------------------------------------------*/
+#top{
+    display: flex;
+    background-color: var(--custom-white);
+    max-width: 900px;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+    max-height: 32px;
+}
+    /*--------------------------
+    Starts the language switcher
+    --------------------------*/
 #language{
     background-color: var(--custom-white);
     position: relative;
@@ -181,7 +213,7 @@ header ul li a{
     display: inline-block;
     height: 32px;
     vertical-align: middle;
-    width: 32px;
+    width: 32px;    
     margin-right: 5px;
 }
 #language ul{
@@ -239,15 +271,13 @@ header ul li a{
     background-image: url(https://www.countryflags.io/it/flat/32.png);
 
 }
-#top{
-    display: flex;
-    background-color: var(--custom-white);
-    max-width: 900px;
-    justify-content: space-between;
-    margin: 0 auto;
-    
-    max-height: 32px;
-}
+    /*---------------------
+    Close language switcher
+    ---------------------*/
+
+    /*------------------
+    Starts theme-changer
+    ------------------*/
 input[type="checkbox"]{
     -webkit-appearance: none;
     visibility: hidden;
@@ -283,10 +313,15 @@ input[type="checkbox"]:checked ~ #theme-changer{
 input[type="checkbox"]:checked ~ #theme-changer:before{
     transform: translateX(130%);
 }
+    /*-----------------
+    close theme-changer
+    -----------------*/
 
-#menu-icon{
-    display: none;
-}
+/*----------Close Header----------*/
+
+/*===================================================
+Media query of Pillars of Websites and portfolio page
+===================================================*/
 
 @media (max-width:722px){
     .cols{
@@ -337,10 +372,14 @@ input[type="checkbox"]:checked ~ #theme-changer:before{
         position: absolute;
     }
 }
+/*===============
+Close Media Query
+===============*/
 
-span{
-    font-weight: bolder;
-}
+/*==========================
+Here starts the Resume style
+==========================*/
+
 .article-title{
     font-size: 1.5rem;
 }
@@ -348,7 +387,7 @@ span{
     font-size: 0.75rem;
 }
 
-/*Layout*/
+/*-----------Layout-----------*/
 .container{
     width: 90%;
     max-width: 900px;
@@ -366,19 +405,11 @@ span{
 .widget-image{
     max-width: 100%;
 }
-img{
-    max-width: 100%;
-    display: block
-}
 main{
     width: 65%;
 }
 aside{
     width: 30%;
-}
-img{
-    max-width: 100%;
-    display: block
 }
 .article-info{
     margin: 0 auto;
@@ -410,11 +441,27 @@ img{
     width: 100%;
     height: 200px;
 }
+.sidebar-widget{
+    border: 25px solid var(--curstom-light-gray);
+    padding: 0.7rem;
+    margin-bottom:  1.5rem;
+}
 
+.image-full{
+    max-height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+header{
+    width: 100%;
+}
+#unordered-list{
+    color: var(--almost-black);
+}
+
+/*
+This media queries that makes the site responsive*/
 @media (max-width: 900px){
-    header{
-        width: 100%;
-    }
     .container-flex{
         padding: 1rem;
     }
@@ -455,8 +502,7 @@ img{
         object-fit: cover;
         width: 100%;
         min-height: 250px;
-}
-
+    }
     /*This combination changes the order of the elements*/
     .article-recent{
         display: flex;
@@ -481,18 +527,6 @@ img{
         display: block
     }
 }
-.sidebar-widget{
-    border: 25px solid var(--curstom-light-gray);
-    padding: 0.7rem;
-    margin-bottom:  1.5rem;
-}
-
-.image-full{
-    max-height: 150px;
-    width: 100%;
-    object-fit: cover;
-}
-#unordered-list{
-    color: var(--almost-black);
-}
-
+/*================
+Close Resume style
+================*/

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Ryan Costa</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio - Ryan Costa</title>
 </head>
 <body>
     <header>
@@ -44,10 +44,10 @@
                     id = "menu-icon">
                     <ul id="menu-list">
                         <li>
-                            <a href="#" class="current-page">Portfolio</a>
+                            <a href="portfolio.html">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#">Resume</a>
+                            <a href="index.html" class="current-page">Resume</a>
                         </li>
                         <li>
                             <a href="#">Contact me</a>
@@ -57,22 +57,121 @@
             </div>
         </div><!--nav-bar-->
     </header>
-    <main>
-        <h1 id="title">My projects
-        </h1>
-        <h2 id="PWTitle">Pillar of Websites</h2>
-        <p id="PWContent">
-            This project, was, basecally, a tutorial of HTML, CSS and JavaScript for beginners. Simple static page.</p>
-        <img src="images/pillarsofwebsites.png" alt="other website image">
-        <p class="readMore">
-            See more clicking <a class="here" href="page.html" target="_blank">here</a></p>
-        <hr>
-        <h2 id="PPTitle">Product Page</h2>
-        <p id="PPContent">
-            I did a product page, for that exemple I made one of my PlayStation, my favorite console. It is completely responsive.</p>
-          <img src="images/controllerpage.png" alt="other website image">
-        <p class="readMore">See more clicking <a class="here" href="ps4.html" target="_blank">here</a></p>
-    </main>
+    <div class="container container-flex">
+        <main role="main">
+            <article id="article-primary">
+                <img src="images/p-code-html.jpg" alt="" class = image-full>
+                <h2 class="article-title">Who I am</h2>
+                 
+                </p>
+                <p class="article-body">
+                    I am <span>Ryan Rodrigo Costa</span>, software engineering student. I am a lively motivated person that will give my own blood to what I belive. <br>
+                    In my breaks I study, read, play with my wife and code a lot.
+                </p>
+                
+            </article>
+            <article class="article-recent">
+                <div class="article-recent-main">
+                    <h2>Academic Formation</h2>
+                    <p class="article-body">I am attending Software Engeneer in Uninter. One of the most complete courses about technology, 4 years, from the basics of planning projects to real applications.</p>
+                    <a href="https://www.uninter.com/" class="read-more" target="_blank">Meet my school</a>
+                </div><!--article-recent-main-->
+                <div class="article-recent-secondary">
+                    <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" class="article-image">
+                </div><!--article recent secondary-->
+            </article>
+            <article class="article-recent">
+                <div class="article-recent-main">
+                <h2>Extracurricular courses</h2>
+                        <p class="article-body">
+                        <ul id="unordered-list">
+                            <li>
+                                Automotive Mechanics - Unicap ✓
+                            </li>
+                            <li>
+                                Quantities and Measures - Fundação Bradesco ✓
+                            </li>
+                            <li>
+                                Daily Geometry - Fundação Bradesco ✓
+                            </li>
+                            <li>
+                                Python, Module I, II and III - Video Course ✓
+                            </li>
+                            <li>
+                                Database, MySQL - Video Course ✓
+                            </li>
+                            <li>
+                                HTML5 and CSS3, module I and II - Video course ✓
+                            </li
+                            ><li>
+                                Javascript - Video Course ✓
+                            </li>
+                            <li>
+                                Introduction to Responsive Web Design - Free Code Camp ✓
+                            </li>
+                            <li>
+                                Git and GitHub - 
+                                Teacher José de Assis ✓
+                            </li>
+                            <li>
+                                Python POO - Boson Training School✓
+                            </li>
+                            <li>
+                                Topics in Algebra - Equations ✓
+                            </li>
+                            <li>
+                                BootStrap - From beginner to expert - Udemy - attending
+                            </li>
+                            <li>
+                                React Course - CFB Courses - attending
+                            </li>
+                            <li>
+                                Python for Data Science - Free Code Camp - attending
+                            </li>
+                            <li>
+                                MogoDB for beginners - Nathaniel Paiva Courses - attending
+                            </li>
+                            <li>
+                                Python and MySQL: Database manipulation with Python - The codex - attending
+                            </li>
+                            <li>
+                                Calculus - Equate - attending
+                            </li>
+                        </ul>     
+                        </p>
+                </div><!--article-recent-main-->
+                <div class="article-recent-secondary">
+                    <img src="images/p-workspace.jpg" alt="" class="article-image">
+                </div><!--article recent secondary-->
+            </article>
+            <article class="article-recent">
+                <div class="article-recent-main">
+                    <h2>Objective</h2>
+                    <p class="article-body">My main objective is work with my love, technology. I chose this area for, first, it is a pleasure work to me and, second, it has the hottest job market. Being technology the application of scientific knowledge for practical purposes, it can be used to help people around the world, to connect everybody in a simple way. For me it is mind-blowing how electronic circuits can make the marriage of the virgin made by Raphael Sanzio in a screen</p>
+                </div><!--article-recent-main-->
+                <div class="article-recent-secondary">
+                    <img src="images/goals.jpg" alt="" class="article-image">
+                </div><!--article-recent-secondary-->
+            </article>
+        </main>
+
+        <aside class="side-bar">
+            <div class="sidebar-widget">
+                <h2 class="widget-title">My best college project, Sapiens Machina</h2>
+                <img src="images/conect.jpg" alt="" class="article-image">
+                <p class="widget-body">When I was just a sophomore in high school, in the first year of social isolation the school had problems to achieve some students, mainly the countryside students who do not have internet access, so our team elaborate a http modem to provide the classes and get their notes.  .</p>
+            </div><!--sidebar-widget -->
+
+            <div class="sidebar-widget">
+                <h2 class="widget-title">My daily life philosophy</h2>
+                <div class="recent-post">
+                    <h3 class="widget-recent-post-title">Albert Camus</h3>
+                    <p>“The struggle itself towards the heights is enough to fill a man's heart. One must imagine Sisyphus happy"</p>
+                    <a href="https://www.sparknotes.com/philosophy/sisyphus/summary/"  class="read-more" target="_blank">read more</a>
+                </div><!--recent-post-->
+            </div><!--sidebar-widget -->
+        </aside>
+    </div><!--container-flex-->
     <script src="script.js"></script>
 </body>
 </html>

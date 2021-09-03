@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Ryan Costa</title>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <div id="dark-theme-div">
+                <label for="switch">
+                    <input type="checkbox" id="switch">
+                    <span id="theme-changer"></span>
+                </label>
+            </div><!--dark-theme-div-->
+            <div id="language">
+                <div id="selected-lang">
+                    <img src="https://www.countryflags.io/us/flat/32.png" alt="flag" id="select-lang-flag">
+                    <p id="select-lang" class="lang">English</p>
+                </div><!--selected-lang-->
+                <ul>
+                    <li>
+                        <a id="us" Language="English" class="lang">English</a></li>
+                    <li>
+                        <a id="br" Language="Português" class="lang">Português</a></li>
+                    <li>
+                        <a Language="Español" id="es" class="lang">Español</a></li>
+                    <li>
+                        <a Language="Italiano" id="it" class="lang">Italiano</a></li>
+                </ul>
+            </div><!--language-->
+        </div><!--top-->
+        <div id="nav-bar">
+            <div>
+                <h2>Ryan Costa</h2>
+                <h3>Your next choice</h3>
+            </div>
+            <div>
+                <nav id=nav>
+                    <img src="images/menu.png" alt="menu"
+                    id = "menu-icon">
+                    <ul id="menu-list">
+                        <li>
+                            <a href="portfolio.html" class="current-page">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact me</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div><!--nav-bar-->
+    </header>
+    <div class="container container-flex">
+        <main id="main">
+            <h1 id="title">My projects
+            </h1>
+            <h2 id="PWTitle">Pillar of Websites</h2>
+            <p id="PWContent">
+                This project, was, basecally, a tutorial of HTML, CSS and JavaScript for beginners. Simple static page.</p>
+            <img src="images/pillarsofwebsites.png" alt="other website image">
+            <p class="readMore">
+                See more clicking <a class="here" href="page.html" target="_blank">here</a></p>
+            <hr>
+            <h2 id="PPTitle">Product Page</h2>
+            <p id="PPContent">
+                I did a product page, for that exemple I made one of my PlayStation, my favorite console. It is completely responsive.</p>
+              <img src="images/controllerpage.png" alt="other website image">
+            <p class="readMore">See more clicking <a class="here" href="ps4.html" target="_blank">here</a></p>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

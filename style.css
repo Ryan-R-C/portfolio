@@ -458,26 +458,6 @@ header{
     color: var(--almost-black);
 }
 
-/*
-This media queries that makes the site responsive*/
-@media (max-width: 900px){
-    .container-flex{
-        padding: 1rem;
-    }
-    .article-recent-main{
-        width: 70%;
-    }
-    .article-recent-secondary{
-        min-width: 25%;
-        margin-right: 10px;
-    }
-    img{
-    max-width: 100%;
-    display: block
-
-    }
-    
-} 
 @media (max-width: 720px){
     .container-flex{
         display: block;
@@ -529,3 +509,27 @@ This media queries that makes the site responsive*/
 /*================
 Close Resume style
 ================*/
+
+/*=========================================================
+This media queries that makes the portfolio site responsive
+=========================================================*/
+@media (max-width: 900px){
+    .container-flex{
+        padding: 1rem;
+    }
+    .article-recent-main{
+        width: 70%;
+    }
+    .article-recent-secondary{
+        min-width: 25%;
+        margin-right: 10px;
+    }
+    img{
+    max-width: 100%;
+    display: block
+    }
+    #main{
+        box-shadow: none;
+    }
+    
+} 

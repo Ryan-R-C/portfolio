@@ -100,7 +100,7 @@ const data =
     "meTitle":
                 "Quem eu sou",
     "meContent":
-                "Sou Ryan Rodrigo Costa, estudante de engenharia de software. Sou uma pessoa animada e motivada que vai dar o meu próprio sangue ao que acredito. Nos meus intervalos estudo, leio, brinco com a minha mulher e código muito.”",
+                'Sou Ryan Rodrigo Costa, estudante de engenharia de software. Sou uma pessoa animada e motivada que vai dar o meu próprio sangue ao que acredito. Nas minhas folgas estudo, leio, jogo com a minha esposa e "codo" muito.',
     "acFormationTitle":
                 "Formação Acadêmica",
     "acFormationContent":

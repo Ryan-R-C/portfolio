@@ -189,7 +189,6 @@ Top layout and formatation that contains language switcher and theme-changer
 #top{
     display: flex;
     background-color: var(--custom-white);
-    max-width: 900px;
     justify-content: space-between;
     margin: 0 auto;
     

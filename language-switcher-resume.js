@@ -112,11 +112,11 @@ const data =
     "objectiveTitle":
                 "Objetivos",
     "objectiveContent":
-                "Meu principal objetivo é trabalhar com meu amor, tecnologia. Escolhi esta área porque, em primeiro lugar, é um prazer trabalhar para mim e, em segundo lugar, ela tem o mercado de trabalho mais aquecido. Sendo tecnologia a aplicação do conhecimento científico para fins práticos, pode ser usado para ajudar pessoas ao redor do mundo, para conectar todos de uma forma simples. Para mim é alucinante como os circuitos eletrônicos podem fazer o casamento da virgem feito de Raphael Sanzio em uma tela",
+                "Meu principal objetivo é trabalhar com meu amor, tecnologia. Escolhi esta área porque, em primeiro lugar, é um prazer para mim trabalhar com isso e, em segundo lugar, ela tem o mercado de trabalho bem aquecido. Sendo tecnologia a aplicação do conhecimento científico para fins práticos, pode ser usada para ajudar pessoas ao redor do mundo, para conectar todos de uma forma simples. Para mim é alucinante como os circuitos eletrônicos podem fazer O Casamento da Virgem de Raphael Sanzio em uma tela",
     "projTitle":
-                "Meu melhor projeto de faculdade, Sapiens Machina",
+                "Meu melhor projeto da minha escola, Sapiens Machina",
     "projContent":
-                "Quando eu estava no segundo ano do ensino médio, no primeiro ano de isolamento social a escola teve problemas para atingir alguns alunos, principalmente os do interior que não têm acesso à internet, então nossa equipe elaborou um modem http para atender as aulas e pegue suas anotações.",
+                "Quando eu estava no segundo ano do ensino médio, no primeiro ano de isolamento social a escola teve problemas para atingir alguns alunos, principalmente os do interior que não têm acesso à internet, então nossa equipe elaborou um modem http para fornecer as aulas e pegar suas anotações.",
     "philosophyTitle":
                 "Minha filosofia de vida diária",
     "philosophyContent":

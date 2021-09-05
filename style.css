@@ -449,6 +449,9 @@ aside{
     order: 2;
     width: 68%;
 }
+.article-body{
+    text-align: justify;
+}
 .article-image{
     object-fit: cover;
     width: 100%;
@@ -471,6 +474,28 @@ header{
 #unordered-list{
     color: var(--almost-black);
 }
+/*=========================================================
+This media queries that makes the portfolio site responsive
+=========================================================*/
+@media (max-width: 900px){
+    .container-flex{
+        padding: 1rem;
+    }
+    .article-recent-main{
+        width: 70%;
+    }
+    .article-recent-secondary{
+        min-width: 25%;
+        margin-right: 10px;
+    }
+    img{
+    max-width: 100%;
+    display: block
+    }
+    #main{
+        box-shadow: none;
+    }  
+} 
 
 @media (max-width: 720px){
     .container-flex{
@@ -523,33 +548,12 @@ header{
 /*================
 Close Resume style
 ================*/
-
-/*=========================================================
-This media queries that makes the portfolio site responsive
-=========================================================*/
-@media (max-width: 900px){
-    .container-flex{
-        padding: 1rem;
-    }
-    .article-recent-main{
-        width: 70%;
-    }
-    .article-recent-secondary{
-        min-width: 25%;
-        margin-right: 10px;
-    }
-    img{
-    max-width: 100%;
-    display: block
-    }
-    #main{
-        box-shadow: none;
-    }  
-} 
-
 /*========
 Contact me
 ========*/
 #contactContent{
     display: flex;
+}
+#me{
+    text-align: center;
 }

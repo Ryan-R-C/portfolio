@@ -90,6 +90,7 @@ a{
 
 span{
     font-weight: bolder;
+    color: var(--almost-black);
 }
 #center-p{
     text-align: center;
@@ -151,12 +152,12 @@ header{
 }
 footer .social-media{
     margin: 0 .5rem;
-    color: var(--custom-white);
+    color: var(--dontchange-white);
 }
 footer{
     text-align: center;
     background-color: var(--custom-dark);
-    color: var(--custom-white);
+    color: var(--dontchange-white);
     padding: .7rem 0;
 }
 #nav-bar{
@@ -549,3 +550,6 @@ This media queries that makes the portfolio site responsive
 /*========
 Contact me
 ========*/
+#contactContent{
+    display: flex;
+}

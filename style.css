@@ -238,7 +238,7 @@ Top layout and formatation that contains language switcher and theme-changer
     display: none;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 }
 #language:hover ul{
     display: block;
@@ -367,6 +367,7 @@ Media query of Pillars of Websites and portfolio page
     #menu-icon{
         cursor: pointer;
         float: right;
+        min-width: 50%;
         height: 89px;
         width: 60px;
         object-fit: contain;
@@ -382,6 +383,15 @@ Media query of Pillars of Websites and portfolio page
     #language:hover ul{
         transform: translateX(-21%);
         position: absolute;
+    }
+}
+
+@media (max-width: 442px){
+    #menu-list{
+        top: 160px;
+    }
+    #menu-icon{
+        height: 128px;
     }
 }
 /*===============
@@ -473,6 +483,9 @@ header{
 }
 #unordered-list{
     color: var(--almost-black);
+}
+#projContent{
+    margin-top: 19.920px;
 }
 /*=========================================================
 This media queries that makes the portfolio site responsive

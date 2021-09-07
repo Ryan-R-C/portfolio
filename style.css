@@ -57,7 +57,7 @@ Main Typograph
 
 h1, h2, h3{
     color: var(--almost-black);
-    
+    text-align: center;
 }
 h1{
     font-size: 2.8rem;
@@ -85,16 +85,13 @@ a{
 }
 #main a{
     text-decoration: none;
-    color: var(--jscolor);
 }
 
 span{
     font-weight: bolder;
     color: var(--almost-black);
 }
-#center-p{
-    text-align: center;
-}
+
 /*==========================
 Style of Pillars of Websites
 ==========================*/
@@ -102,9 +99,9 @@ Style of Pillars of Websites
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    text-align: center;
     background-color: var(--custom-white);
     padding: 3rem;
+    padding-top: 0;
 }/*This line is shared in both pages*/
 .cols{
     display: flex;
@@ -150,15 +147,13 @@ header{
     min-width: 100%;
     margin: 0;
 }
-footer .social-media{
-    margin: 0 .5rem;
-    color: var(--dontchange-white);
-}
-footer{
+footer#social-media{
     text-align: center;
     background-color: var(--custom-dark);
-    color: var(--dontchange-white);
     padding: .7rem 0;
+}
+footer#social-media a{
+    color: var(--dontchange-white);
 }
 #nav-bar{
     background-color: var(--custom-dark);
@@ -428,7 +423,7 @@ Here starts the Resume style
 .widget-image{
     max-width: 100%;
 }
-main{
+#main-resume{
     width: 65%;
 }
 aside{
@@ -439,6 +434,7 @@ aside{
 }
 .read-more{
     display: block;
+    text-align: center;
 }
 #article-primary{
     border-bottom: var(--custom-gray) 1px solid;
@@ -505,7 +501,7 @@ This media queries that makes the portfolio site responsive
     max-width: 100%;
     display: block
     }
-    #main{
+    #main-resume{
         box-shadow: none;
     }  
 } 
@@ -514,7 +510,7 @@ This media queries that makes the portfolio site responsive
     .container-flex{
         display: block;
         }
-    main, aside{
+    #main-resume, #aside{
         width: 100%;
     }
     .container-flex{

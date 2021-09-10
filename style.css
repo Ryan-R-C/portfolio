@@ -83,6 +83,9 @@ a{
     color: var(--csscolor);
     text-decoration: none;
 }
+blockquote{
+    color: var(--almost-black);
+}
 #main a{
     text-decoration: none;
 }

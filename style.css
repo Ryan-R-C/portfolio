@@ -94,6 +94,23 @@ span{
     font-weight: bolder;
     color: var(--almost-black);
 }
+button{ 
+    border: none;
+    border-radius: 12px;
+    background-color: var(--dontchange-white);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+.btn-glass{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--dontchange-white);
+}
+.btn-glass a{
+    color: var(--dontchange-white)
+}
 
 /*==========================
 Style of Pillars of Websites
@@ -164,6 +181,7 @@ footer#social-media a{
     display: flex;
     justify-content: space-between;
     text-align: center;
+    min-height: 89px;
 }
 #nav-bar div{
     margin: 0.5rem 2.5rem;
@@ -399,6 +417,60 @@ Close Media Query
 /*==========================
 Here starts the Resume style
 ==========================*/
+
+/*Here starts the "presentation" of the page*/
+#first{
+    padding-top: 3rem;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--custom-heavyblue), var(--main-color));
+    display: flex;
+    justify-content: right;
+    max-height: 460px;
+    overflow: hidden;
+    text-align: left;
+}
+#page-title-in-header{
+    color: var(--dontchange-white);
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+#header-content{
+    width: 30%;
+    font-weight: 300;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+}
+#header-image{
+    width: 55%;
+    object-fit: contain;
+}
+.separator{
+    background-color: var(--custom-dark);
+    height: 45px;
+    width: 100%;
+}
+@media (max-width: 840px){
+    #first{
+        padding-top: 1rem;
+        flex-direction: column;
+        max-height: 600px;
+    }
+    #page-title-in-header{
+        text-align: center;
+        font-size: 2;
+    }
+    #header-content{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #header-image{
+        width: 70%;
+        margin: 0 auto;
+        transform: translateX(-25px);
+    }
+}
 
 .article-title{
     font-size: 1.5rem;

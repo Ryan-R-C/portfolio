@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 /*----------The colors in :root makes the style easier to do----------*/
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --main-color: #6563ff;
     --almost-black: #011113;
@@ -445,7 +448,7 @@ Here starts the Resume style
     width: 55%;
     object-fit: contain;
 }
-.separator{
+#separator{
     background-color: var(--custom-dark);
     height: 45px;
     width: 100%;

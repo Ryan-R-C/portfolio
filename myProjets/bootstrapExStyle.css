@@ -1,0 +1,109 @@
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+:root{
+    --main-color: #E31F24;
+    --almost-black: #011113;
+    --custom-white: #f8f8f8;
+    --custom-gray: #a2a2a2;
+    --custom-light-gray: #d0cfcf;
+    --custom-lightblue: #1792d2;
+    --custom-heavyblue: #143774;
+    --jscolor: #f6dd04;
+    --htmlcolor: #f16524;
+    --csscolor: #0076be;
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+#title{
+    width: 100%;
+    background-color: var(--main-color);
+    margin: 0;
+}
+#title-page{
+    margin-top: 3rem;
+    color: var(--custom-white);
+    margin-bottom: 1.5rem;
+}
+.navbar-brand{
+    font-size: 3rem;
+    color: var(--main-color);
+    padding-left: 12px;
+}
+.nav-item{
+    padding: 0.2rem;
+}
+.fab{
+    margin-bottom: 1rem;
+}
+
+.navbar-toggler-icon{
+    padding-right: 12px ;
+}
+
+#pricing, #features{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+#features{
+    color: var(--custom-white);
+}
+.feature-box{
+    text-align: center;
+}
+.icon{
+    margin: .7rem 0;
+}
+.icon:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+#testimonials{
+    background-color: var(--custom-gray);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+
+}
+.testimonial-image{
+    border-radius: 100%;
+    width: 20%;
+}
+.height-300{
+    height: 300px;
+}   
+.height-300{
+    align-items: center;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#pricing{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.card{
+    padding: 0 !important;
+    margin: 1rem 0 !important;
+}
+.card-deck{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-header{
+    width: 100%;
+}

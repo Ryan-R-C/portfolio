@@ -15,7 +15,8 @@ const PPTitle = document.querySelector("#PPTitle")
 const PPContent = document.querySelector("#PPContent")
 const readMore = document.querySelectorAll(".readMore")
 const here = document.querySelectorAll(".here")
-
+const BTSTile = document.querySelector("#BTSTile")
+const BTSContent = document.querySelector("#BTSContent")
 
 link.forEach(element => {
     element.addEventListener('click', () => {
@@ -42,6 +43,10 @@ link.forEach(element => {
         
         here.textContent = data[attributeLang].here
 
+        BTSTile.textContent = data[attributeLang].BTSTile
+        
+        BTSContent.textContent = data[attributeLang].BTSContent
+        
     })
 });
 const data =
@@ -60,7 +65,11 @@ const data =
 	"PPTitle":
                 "Product Page",
 	"PPContent":
-                "I did a product page, for that exemple I made one of my PlayStation, my favorite console. It is completely responsive."
+                "I did a product page, for that exemple I made one of my PlayStation, my favorite console. It is completely responsive.",
+    "BTSTile":
+                "Bootstrap, Services/ Provision",
+    "BTSContent":
+                "This was my first HTML project using Bootstrap, a library of CSS3 and JavaScript, it is powerfull and maximize the time of styling the page. I got just a few days to do the project. For the content I did it like a service provision of the movie Terminat"
     },
     "Português":
     {"title":
@@ -76,7 +85,11 @@ const data =
     "PPTitle":
                 "Página de produto",
     "PPContent":
-                "Fiz uma página de produto peguei como exemplo meu PlayStation, meu console favorito. É totalmente responsivo, com o famoso menu hamburguer."
+                "Fiz uma página de produto peguei como exemplo meu PlayStation, meu console favorito. É totalmente responsivo, com o famoso menu hamburguer.",
+                "BTSTile":
+                "Bootstrap, Prestação de Serviços",
+    "BTSContent":
+                "Este foi meu primeiro projeto HTML usando Bootstrap, uma biblioteca de CSS3 e JavaScript, é muito poderoso e maximiza o tempo de estilização da página. Tive apenas alguns dias para fazer o projeto. Para conteúdo fiz como uma prestação de serviço do filme Terminator."       
             },
     "Español":
     {"title":
@@ -92,7 +105,11 @@ const data =
     "PPTitle":
                 "Página del producto",
     "PPContent":
-                "Hice una página de producto, para ese ejemplo hice una de mi PlayStation, mi consola favorita. Es completamente sensible."},
+                "Hice una página de producto, para ese ejemplo hice una de mi PlayStation, mi consola favorita. Es completamente sensible.",
+    "BTSTile":
+                "Bootstrap, prestación de servicios",
+    "BTSContent":
+                "Este fue mi primer proyecto HTML usando Bootstrap, una biblioteca de CSS3 y JavaScript, es poderoso y maximiza el tiempo de estilo de la página. Solo tengo unos días para hacer el proyecto. Para el contenido lo hice como una prestación de servicios de la película Terminator."},  
     "Italiano":
     {"title":
                 "I miei progetti",
@@ -107,5 +124,10 @@ const data =
     "PPTitle":
                 "Pagina del prodotto",
     "PPContent":
-                "Ho creato una pagina del prodotto, per quell'esempio ho realizzato una delle mie PlayStation, la mia console preferita. È completamente responsive."}    
+                "Ho creato una pagina del prodotto, per quell'esempio ho realizzato una delle mie PlayStation, la mia console preferita. È completamente responsive.",
+    "BTSTile":
+                "Bootstrap, fornitura di servizi",
+    "BTSContent":
+                "Questo è stato il mio primo progetto HTML che utilizza Bootstrap, una libreria di CSS3 e JavaScript, è potente e massimizza il tempo di stile della pagina. Ho solo pochi giorni per realizzare il progetto. Per il contenuto l'ho fatto come una fornitura di servizi del film Terminator."
+            }    
 }

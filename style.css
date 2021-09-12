@@ -3,6 +3,10 @@
 html{
     scroll-behavior: smooth;
 }
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 :root{
     --main-color: #6563ff;
     --almost-black: #011113;
@@ -31,7 +35,7 @@ Main Layout
 ==========*/
 body{
     background-color: var(--curstom-light-gray);
-    min-width: 100%;
+    max-width: 100%;
 }
 
 nav ul{
@@ -175,7 +179,7 @@ footer#social-media{
     background-color: var(--custom-dark);
     padding: .7rem 0;
 }
-footer#social-media a{
+footer#social-media a, footer#social-media p{
     color: var(--dontchange-white);
 }
 #nav-bar{

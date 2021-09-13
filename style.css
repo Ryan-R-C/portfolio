@@ -436,7 +436,7 @@ Here starts the Resume style
     overflow: hidden;
     text-align: left;
 }
-#page-title-in-header{
+#pageTitleInHeader{
     color: var(--dontchange-white);
     font-size: 2.5rem;
     text-align: left;
@@ -463,7 +463,7 @@ Here starts the Resume style
         flex-direction: column;
         max-height: 600px;
     }
-    #page-title-in-header{
+    #pageTitleInHeader{
         text-align: center;
         font-size: 2;
     }

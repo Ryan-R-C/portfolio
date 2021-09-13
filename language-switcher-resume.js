@@ -12,6 +12,10 @@ const selectFlag = document.querySelector("#select-lang-flag")
 /*------------
 Resume content
 ------------*/
+const pageTitleInHeader = document.querySelector("#pageTitleInHeader")
+const pageTitleContent = document.querySelector("#pageTitleContent")
+const WhoIm = document.querySelector("#WhoIm")
+const myProj = document.querySelector("#myProj")
 const meTitle = document.querySelector("#meTitle")
 const meContent = document.querySelector("#meContent")
 const acFormationTitle = document.querySelector("#acFormationTitle")
@@ -37,6 +41,13 @@ link.forEach(element => {
         /*--------------
         Resume Atributes
         --------------*/
+        pageTitleInHeader.innerHTML = data[attributeLang].pageTitleInHeader
+
+        pageTitleContent.innerHTML = data[attributeLang].pageTitleContent
+
+        WhoIm.textContent = data[attributeLang].WhoIm
+        myProj.textContent = data[attributeLang].myProj
+
         meTitle.textContent = data[attributeLang].meTitle
 
         meContent.textContent = data[attributeLang].meContent
@@ -68,6 +79,14 @@ const data =
 	{/*----
     Resume
     ----*/
+    "pageTitleInHeader": 
+        "Hey.<br>I am Ryan.<br>Front-End Dev.",
+    "pageTitleContent": 
+        "<strong>Want more?</strong> Here is my <strong>Resume</strong> and my<strong> Portfolio</strong> is in the navbar up there. <strong>Take a look at my work!</strong>",
+    "WhoIm": 
+        "Who I am",
+    "myProj": 
+        "My projects",
     "meTitle":
         "Who I am",
     "meContent":
@@ -97,6 +116,14 @@ const data =
     {/*----
     Resume
     ----*/
+    "pageTitleInHeader":
+         "Ei. <br> Eu sou Ryan. <br> Front-end Dev.",
+     "pageTitleContent":
+         "<strong> Quer mais? </strong> Aqui está meu <strong> Currículo </strong> e meu <strong> Portfólio </strong> está na barra de navegação lá em cima. <strong> Dê uma olhada no meu trabalho! </strong> ",
+    "WhoIm": 
+         "Quem eu sou",
+     "myProj": 
+         "Meus projetos",
     "meTitle":
                 "Quem eu sou",
     "meContent":
@@ -126,6 +153,14 @@ const data =
     {/*----
     Resume
     ----*/
+    "pageTitleInHeader":
+         "Hola. <br> Soy Ryan. <br> Desarrollador de front-end",
+     "pageTitleContent":
+         "<strong> ¿Quieres más? </strong> Aquí está mi <strong> CV </strong> y mi <strong> Portafolio </strong> está en la barra de navegación de arriba. <strong> ¡Echa un vistazo a mi trabajo! </strong> ",
+    "WhoIm": 
+         "Quien soy",
+     "myProj": 
+         "Mis proyectos",    
     "meTitle":
                 "Quien soy",
     "meContent":
@@ -155,6 +190,14 @@ const data =
     {/*----
     Resume
     ----*/
+    "pageTitleInHeader":
+         "Ehi.<br>Io sono Ryan.<br>Sviluppatore front-end.",
+     "pageTitleContent":
+         "<strong>Vuoi di più?</strong> Ecco il mio <strong>Riprendi</strong> e il mio<strong> Portfolio</strong> è nella barra di navigazione lassù. <strong>Dai un'occhiata al mio lavoro!</strong>",
+    "WhoIm": 
+         "Chi sono",
+     "myProj": 
+         "I miei progetti",
     "meTitle":
                 "Chi sono",
     "meContent":

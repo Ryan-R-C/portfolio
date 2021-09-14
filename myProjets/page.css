@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+:root{
+    --main-color: #6563ff;
+    --almost-black: #011113;
+    --custom-white: #f8f8f8;
+    --dontchange-white: #ffff;
+    --custom-gray: #707070;
+    --curstom-light-gray: #d1d1d1;
+    --custom-lightblue: #1792d2;
+    --custom-heavyblue: #143774;
+    --custom-dark: #1F1F1F;
+    --jscolor: #f6dd04;
+    --htmlcolor: #f16524;
+    --csscolor: #0076be;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: var(--curstom-light-gray);
+}
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#main{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--custom-white);
+    padding: 3rem;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.226);
+}
+body{
+    font-family: 'Open Sans',Verdana, Tahoma, sans-serif;
+    margin: 0;
+    width: 100%;
+}
+img{
+    max-width: 100%;
+}
+
+h1 span{
+    color: var(--csscolor);
+}
+
+h1, h2, h3{
+    color: var(--almost-black);
+    text-align: center;
+}
+h1{
+    font-size: 2.8rem;
+    text-align: center;
+    margin-block-start: 0;
+}
+h1 span{
+    color: var(--csscolor);
+}
+h1, h2{
+    color:var(--almost-black)
+}
+h3{
+    font-size: 1.5rem;
+    color: rgb(90, 90, 90)
+}
+p span{
+    color: var(--jscolor);
+}
+p{
+    margin-top: 0;
+}
+a{
+    color: var(--jscolor);
+    text-decoration: none;
+}
+.cols{
+    display: flex;
+    text-align: left;
+    margin: 1em 0;
+    justify-content: space-between;
+}
+.different-column{
+    background-color: var(--custom-gray);
+    color: var(--custom-white);
+    padding: 0.5em;
+}
+.col-1{
+    width: 20%;
+}
+.col-2{
+    width: 45%;
+}
+.col-3{
+    width: 70%;
+}   
+.js{
+    color: var(--jscolor);
+}
+.css{
+    color: var(--csscolor)
+}
+.html{
+    color: var(--htmlcolor);
+}
+.col-2 p span{
+    color: var(--csscolor);
+}
+.different-colum > p{
+    color: var(--custom-white);
+}
+.different-colum p span{
+    color: var(--jscolor);
+}
+footer{
+    text-align: center;
+    background-color: var(--custom-dark);
+    padding: .7rem 0;
+}
+footer p{
+    color: var(--dontchange-white);
+}
+
+@media (max-width:722px){
+    .cols{
+        flex-direction: column;
+    }
+    .col-1, .col-2, .col-3, .different-column{
+        width: 100%;
+    }
+    #main{
+        padding: 1rem;
+        overflow: hidden;
+        width: 90%;
+    }
+}

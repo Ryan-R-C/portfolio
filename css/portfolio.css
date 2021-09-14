@@ -1,0 +1,14 @@
+#main{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--custom-white);
+    padding: 3rem;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.226);
+}
+@media (max-width: 620px) {
+    #main{
+        box-sizing: border-box;
+    }
+    
+}

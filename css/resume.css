@@ -1,0 +1,59 @@
+/*Here starts the "presentation" of the page*/
+#first{
+    padding-top: 3rem;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--custom-heavyblue), var(--main-color));
+    display: flex;
+    justify-content: right;
+    max-height: 460px;
+    overflow: hidden;
+    text-align: left;
+}
+#pageTitleInHeader{
+    color: var(--dontchange-white);
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+#header-content{
+    width: 30%;
+    font-weight: 300;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+}
+#header-image{
+    width: 55%;
+    object-fit: contain;
+}
+#separator{
+    background-color: var(--custom-dark);
+    height: 45px;
+    width: 100%;
+}
+#unordered-list{
+    color: var(--almost-black);
+}
+#projContent{
+    margin-top: 19.920px;
+}
+@media (max-width: 840px){
+    #first{
+        padding-top: 1rem;
+        flex-direction: column;
+        max-height: 600px;
+    }
+    #pageTitleInHeader{
+        text-align: center;
+        font-size: 2;
+    }
+    #header-content{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #header-image{
+        width: 70%;
+        margin: 0 auto;
+        transform: translateX(-25px);
+    }
+}

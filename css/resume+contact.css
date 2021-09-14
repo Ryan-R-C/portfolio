@@ -1,0 +1,149 @@
+
+.article-title{
+    font-size: 1.5rem;
+}
+.info{
+    font-size: 0.75rem;
+}
+/*-----------Layout-----------*/
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.7rem;
+    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.226);
+}
+.container-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--custom-white);
+    padding: 3.5rem;
+
+}
+.widget-image{
+    max-width: 100%;
+}
+#main-resume{
+    width: 65%;
+}
+aside{
+    width: 30%;
+}
+.article-info{
+    margin: 0 auto;
+}
+
+#article-primary{
+    border-bottom: var(--custom-gray) 1px solid;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+.article-recent{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.article-recent-secondary{
+    order: 1;
+    margin-top: 1rem;
+    width: 30%;
+}
+.article-recent-main{
+    order: 2;
+    width: 68%;
+}
+.article-body{
+    text-align: justify;
+}
+.article-image{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+.sidebar-widget{
+    border: 25px solid var(--curstom-light-gray);
+    padding: 0.7rem;
+    margin-bottom:  1.5rem;
+}
+
+.image-full{
+    max-height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+#contactContent{
+    display: flex;
+}
+#me{
+    text-align: center;
+}
+@media (max-width: 900px){
+    .container-flex{
+        padding: 1rem;
+    }
+    .article-recent-main{
+        width: 70%;
+    }
+    .article-recent-secondary{
+        min-width: 25%;
+        margin-right: 10px;
+    }
+    img{
+    max-width: 100%;
+    display: block
+    }
+    #main-resume{
+        box-shadow: none;
+    }  
+} 
+
+
+@media (max-width: 720px){
+    .container-flex{
+        display: block;
+        }
+    #main-resume, #aside{
+        width: 100%;
+    }
+    .container-flex{
+        flex-direction: row;
+    }
+    .article-recent-secondary{
+        order: 1;
+        width: 30%;
+        object-fit: cover;
+    }
+    .article-recent-main{
+        order: 2;
+        width: 68%;
+    }
+    .article-image{
+        object-fit: cover;
+        width: 100%;
+        min-height: 250px;
+    }
+    /*This combination changes the order of the elements*/
+    .article-recent{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-recent-main{
+        width: 100%;
+        order: 2
+    }
+    .article-recent-secondary{
+        width: 100%;
+        order: 1
+    }
+    .widget-image{
+        width: 100%;
+    }
+    .article-image{
+        min-width: 100%;
+    }
+    img{
+        width: 100%;
+        display: block
+    }
+}

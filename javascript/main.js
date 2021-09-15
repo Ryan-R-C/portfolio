@@ -15,3 +15,15 @@ const checkbox = document.querySelector("#switch")
 checkbox.addEventListener('change', function(){
         html.classList.toggle('dark-theme')
 })
+/*
+Fade up animation
+*/
+window.addEventListener('scroll', ()=>{
+    const introContent = document.querySelector(".intro-disabled")
+    let introPositon = introContent.getBoundingClientRect().top
+    let screenPosition = window.innerHeight/1.2
+
+    if(introPositon < screenPosition){
+        introContent.classList.add('intro-active')
+    }
+})

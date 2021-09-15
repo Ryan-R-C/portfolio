@@ -347,7 +347,7 @@ Open Media Querys
         text-align: center;
     }
     #language:hover ul{
-        transform: translateX(-21%);
+        transform: translateX(-1%);
         position: absolute;
     }
 }
@@ -364,4 +364,13 @@ Open Media Querys
 Close Media Query
 ===============*/
 
-
+/*Fade animation*/
+.intro-disabled{
+    opacity: 0;
+    transform: translateY(1.5rem);
+    transition: 0.5s all ease-in-out;
+}
+.intro-active{
+    opacity: 1;
+    transform: translateY(0px);
+}

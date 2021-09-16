@@ -18,12 +18,16 @@ checkbox.addEventListener('change', function(){
 /*
 Fade up animation
 */
+const introContent = document.querySelectorAll(".intro-disabled")
+console.log(introContent)
 window.addEventListener('scroll', ()=>{
-    const introContent = document.querySelector(".intro-disabled")
-    let introPositon = introContent.getBoundingClientRect().top
-    let screenPosition = window.innerHeight/1.2
+    
+    introContent.forEach(introContent => {
+            let introPositon = introContent.getBoundingClientRect().top
+            let screenPosition = window.innerHeight/1.2
 
-    if(introPositon < screenPosition){
-        introContent.classList.add('intro-active')
-    }
-})
+            if(introPositon < screenPosition){
+                introContent.classList.add('intro-active')
+            }
+        });
+    })

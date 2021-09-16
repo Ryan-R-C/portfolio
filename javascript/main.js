@@ -4,9 +4,17 @@ Responsive navbar
 const navBar = document.querySelector("nav#nav")
 const menuIcon = document.querySelector("img#menu-icon")
 const menuList = document.querySelector("ul#menu-list")
+
+menuList.style.maxHeight = "0px";
 menuIcon.addEventListener('click', () => {
-    navBar.classList.toggle('active-menu')
-})
+        if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "142px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+)
 /*=========
 Dark-Theme
 ==========*/

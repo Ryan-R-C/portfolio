@@ -313,11 +313,8 @@ Open Media Querys
 ===============*/
 
 @media (max-width:722px){
-    nav ul li{
-        display: block;
-    }    
    #menu-list{
-        display: none;
+        display: block;
         position: absolute;
         flex-direction: column;
         width: 100%;
@@ -325,7 +322,7 @@ Open Media Querys
         background-color: var(--main-color);
         transition: 1.0s;
         top: 120px;
-        padding: 10px 0;
+        overflow: hidden;
     }
     #menu-list li{
         margin: 1.2rem 0;
@@ -341,10 +338,6 @@ Open Media Querys
     }
     #menu-icon:focus{
         outline: none;
-    }
-    .active-menu #menu-list{
-        display: block;
-        text-align: center;
     }
     #language:hover ul{
         transform: translateX(-1%);

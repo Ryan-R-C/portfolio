@@ -133,7 +133,7 @@ const data =
     "acFormationTitle":
                 "Formação Acadêmica",
     "acFormationContent":
-                "Estou cursando Engenheiro de Software na Uninter. Um dos cursos mais completos sobre tecnologia, 4 anos, desde o básico de planejamento de projetos até aplicações reais.",
+                "Estou cursando Engenheiria de Software na Uninter. Um dos cursos mais completos sobre tecnologia, 4 anos, desde o básico de planejamento de projetos até aplicações reais.",
     "mySchool":
                 "Conheça minha faculdade",
     "CoursesTitle":

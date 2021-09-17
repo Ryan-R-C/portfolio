@@ -35,9 +35,11 @@ link.forEach(element => {
         const attributeLang = element.getAttribute("Language")//It gets the actual language presented on the page
         const attributeId = element.getAttribute("id")//The it that will make the flag change
 
+        const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
+        document.documentElement.setAttribute("lang", `${HTMLlang}`)
+
         selectedLang.textContent = `${attributeLang}`
         selectFlag.src = `https://www.countryflags.io/${attributeId}/flat/32.png`
-
         /*--------------
         Resume Atributes
         --------------*/

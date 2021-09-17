@@ -23,8 +23,9 @@ link.forEach(element => {
         
         const attributeLang = element.getAttribute("Language")
         const attributeId = element.getAttribute("id")
-        var contentlang = attributeLang
-        console.log(attributeId)
+        
+        const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
+        document.documentElement.setAttribute("lang", `${HTMLlang}`)
 
         selectedLang.textContent = `${attributeLang}`
         selectFlag.src = `https://www.countryflags.io/${attributeId}/flat/32.png`

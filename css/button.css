@@ -1,0 +1,17 @@
+button{ 
+    border: none;
+    border-radius: 12px;
+    background-color: var(--dontchange-white);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+.btn-glass{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--dontchange-white);
+}
+.btn-glass a{
+    color: var(--dontchange-white)
+}

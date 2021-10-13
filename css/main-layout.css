@@ -1,0 +1,24 @@
+/*==========
+Main Layout
+==========*/
+body{
+    background-color: var(--curstom-light-gray);
+    max-width: 100%;
+}
+body{
+    font-family: 'Open Sans',Verdana, Tahoma, sans-serif;
+    margin: 0;
+    width: 100%
+}
+/*To animate the theme changer*/
+body, main, p{
+    transition: 1s ease-in-out;
+}
+img{
+    max-width: 100%;
+}
+.read-more{
+    display: block;
+    text-align: center;
+}
+

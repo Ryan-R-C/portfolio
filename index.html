@@ -11,24 +11,34 @@
     <meta name = "author" content="Ryan Rodrigo Costa">
     <meta name="robots" content="index">
     <!--Favicon-->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.ibb.co/T2xnq2P/favicon.png" type="image/x-icon">
     <!--CSS-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="css/main-typograph.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/language-switcher.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/dropdown-menu.css">
+    <link rel="stylesheet" href="css/fade.css">
+    <link rel="stylesheet" href="css/main-layout.css">
+    <link rel="stylesheet" href="css/resume-aside.css">
     <link rel="stylesheet" href="css/resume+contact.css">
     <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/footer.css">
     <!--Font Awesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
 </head>
 <body>
     <header id="header-resume">
-        <div id="top">
+        <section id="top">
             <div id="dark-theme-div">
                 <label for="switch">
                     <input type="checkbox" id="switch">
                     <span id="theme-changer"></span>
                 </label>
             </div><!--dark-theme-div-->
-            <div id="language">
+            <section id="language">
                 <div id="selected-lang">
                     <img src="https://www.countryflags.io/us/flat/32.png" alt="Flag of laguage switcher" id="select-lang-flag">
                     <p id="select-lang" class="lang">English</p>
@@ -47,57 +57,57 @@
                         <a 
                         id="it" Language="Italiano" HTMLlang="it" class="lang">Italiano</a></li>
                 </ul>
-            </div><!--language-->
-        </div><!--top-->
-        <div id="nav-bar">
-            <div>
-                <h2>Ryan Costa</h2>
+            </section><!--language-->
+        </section><!--top-->
+        <section id="nav-bar">
+            <div class="nav-bar_elements">
+                <h2><em>Ryan </em><em id="disappear-in-small-devices">Costa</em></h2>
                 <h3>Your next choice</h3>
             </div>
-            <div>
-                <nav id=nav>
-                    <img src="images/menu.png" alt="Menu icon to a list of links"
-                    id = "menu-icon">
-                    <ul id="menu-list">
-                        <li>
-                            <a href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="index.html" class="current-page">Resume</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact me</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div><!--nav-bar-->
-        <div id = "first">
-            <div id="header-content">
-                <h1 id="pageTitleInHeader">Hey.<br>I am Ryan.<br>Front-End Dev.</h1>
-                <p id = "pageTitleContent"><strong>Want more?</strong> Here is my <strong>Resume</strong> and my<strong> Portfolio</strong> is in the navbar up there. <strong>Take a look at my work!</strong></p>
+            <nav id="nav" class="nav-bar_elements">
+                <button id = "menu-btn"><span class="fas fa-bars b" alt="menu" id="menu-icon"></span></button>
+                <ul id="menu-list">
+                    <li>
+                        <a href="portfolio.html" id="portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="current-page" id="resume">Résumé</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" id="contact">Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+        </section><!--nav-bar-->
+        <section id = "header-resume_landing-page">
+            <article id="header-resume_landing-page_content">
+                <h1 id="header-resume_landing-page_content_title">Hey.<br>I am Ryan.<br>Front-End Dev.</h1>
+                <p id="header-resume_landing-page_content_text"><strong>Want more?</strong> Here is my <strong>Resume</strong> and my<strong> Portfolio</strong> is in the navbar up there. <strong>Take a look at my work!</strong></p>
                 <button class="btn-glass"><a href="#separator" id="WhoIm">Who I am</a></button>
                 <button><a href="portfolio.html" id="myProj">My projects</a></button>
-            </div>
-            <img id="header-image" src="images/me.png" alt="a photograph of me">
-        </div><!--fist-->
+            </article>
+            <img id="header-resume_landing-page_image-of-mine" src="https://i.ibb.co/BwDS1Qv/me.png" alt="a photograph of me">
+        </section><!--fist-->
     </header>
     <div id="separator"></div>
     <div class="container container-flex">
         <main role="main" id="main-resume">
             <article id="article-primary">
-                <header><img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/240604789_652997085675192_6532690577143876551_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=DQ1cT0m79XoAX8TgfUY&_nc_ht=scontent.fvcp4-1.fna&oh=c5b3fd77de17f8a1f8c829863f1dacb0&oe=615C3338" alt="A HTML code" class = image-full>
+                <header><img src="https://i.ibb.co/nDnJpty/code-html-programming-to-programm-algoritm-vscode.jpg" alt="A HTML code" class = image-full>
                     <h1 class="article-title" id="meTitle">Who I am</h1>
                 </header>
                 <main>
                     <p class="article-body intro-disabled" id="meContent">
-                        I am <span>Ryan Rodrigo Costa</span>, software engineering student. I am a lively motivated person that will give my own blood to what I belive.
-                        In my breaks I study, read, play with my wife and code a lot.
+                        I am <span>Ryan Rodrigo Costa</span>, software engineering student.
+                        I am a lively motivated person who give his blood to what I belive.
+                        I love to solve problems, for the reason that I finish them knowing each time more, always reaching a clean code. 
+                        Love to learn, to me the knowledge is never enough. 
+                        And I like to work as a team, there is always someone to give good ideas and be sincere in the team.
                     </p>
                 </main>
             </article>
             <article class="article-recent">
-                <main class="article-recent-main">
+                <section class="article-recent-main">
                         <header>
                             <h2 id ="acFormationTitle">Academic Formation</h2>
                         </header>
@@ -105,10 +115,28 @@
                             <p class="article-body  intro-disabled" id="acFormationContent">I am attending Software Engeneer in Uninter. One of the most complete courses about technology, 4 years, from the basics of planning projects to real applications.</p>
                             <a href="https://www.uninter.com/" class="read-more" target="_blank" id="mySchool">Meet my school</a>
                         </main>
-                </main>
+                </section>
                 <footer class="article-recent-secondary">
                     <div>
-                        <footer><img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A image of students graduating" class="article-image"></footer>
+                        <footer><img src="https://images.pexels.com/photos/2292837/pexels-photo-2292837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="A image of students graduating" class="article-image"></footer>
+                    </div><!--article recent secondary-->
+                </footer>
+            </article>
+            <article class="recent">
+            </article>
+            <article class="article-recent">
+                <section class="article-recent-main">
+                        <header>
+                            <h2 id ="techFormationTitle">Technical Education</h2>
+                        </header>
+                        <main>
+                            <p class="article-body  intro-disabled" id="techormationContent">I am graduated on Front End by Alura, 170 hours and 18 courses! It went from the basics, such as HTML and CSS, to Javascript Animations and SEO.</p>
+                            <a href="https://alura.com.br/" class="read-more" target="_blank" id="meetInstitution">Meet the institution</a>
+                        </main>
+                </section>
+                <footer class="article-recent-secondary">
+                    <div>
+                        <footer><img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="A image of students graduating" class="article-image"></footer>
                     </div><!--article recent secondary-->
                 </footer>
             </article>
@@ -119,16 +147,7 @@
                     </header>
                             <main>
                                 <p class="article-body">
-                                <ul id="unordered-list">
-                                    <li>
-                                        Automotive Mechanics - Unicap ✓
-                                    </li>
-                                    <li>
-                                        Quantities and Measures - Bradesco Foundation ✓
-                                    </li>
-                                    <li>
-                                        Daily Geometry - Bradesco Foundation ✓
-                                    </li>
+                                <ul id="courses">
                                     <li>
                                         Python, Module I, II and III - Curso em Vídeo ✓
                                     </li>
@@ -158,51 +177,23 @@
                                         BootStrap - From beginner to expert - Udemy ✓
                                     </li>
                                     <li>
-                                        Alura – JavaScript Fundamentals: Types, Variables and functions ✓
-                                    </li>
-                                    <li>
-                                        Alura – HTML5 e CSS3 part 1: The first page ✓
-                                    </li>
-                                    <li>
-                                        Alura – HTML5 e CSS3 part 2: Positioning, lists and navegation ✓
-                                    </li>
-                                    <li>
-                                        Alura – HTML5 e CSS3 part 3: Working with forms and tables – attending
-                                    </li>
-                                    <li>
-                                        Alura – JavaScript: Programming in Object Orientation – attending
-                                    </li>
-                                    <li>
-                                        Alura – React: Learning how the library works – attending
-                                    </li>
-                                    <li>
-                                        Alura – HTTP: Understanding the web behind the scenes – attending
-                                    </li>
-                                    <li>
-                                        Alura – Web Accessibility part 1: tornando seu front-end inclusivo – attending
-                                    </li>
-                                    <li>
-                                        Alura – Computer Network part 1: Concepts and practice – attending
-                                    </li>
-                                    <li>
                                         Equaciona – Calculus – attending
                                     </li>
-
                                 </ul>
                                 </p>
                             </main>
                 </main>
                 <footer class="article-recent-secondary">
-                        <img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/240605380_652997719008462_1288058098943359632_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=eaYO4JaqeV4AX--644O&_nc_ht=scontent.fvcp4-1.fna&oh=3ec9325b33fbc7fc60d4bc692ce7e270&oe=615E0B8D" alt="Home study workspace" class="article-image">
+                        <img src="https://i.ibb.co/mh2HZ5z/medium-workspace-notebook-laptop-coffe-cellphone.jpg" alt="Home study workspace" class="article-image">
                 </footer>
             </article>
             <article class="article-recent">
                 <main class="article-recent-main">
                         <h2 id="objectiveTitle">Objectives</h2>
-                        <p class="article-body intro-disabled" id="objectiveContent">My main objective is work with my love, technology. I chose this area for, first, it is a pleasure work to me and, second, it has the hottest job market. Being technology the application of scientific knowledge for practical purposes, it can be used to help people around the world, to connect everybody in a simple way. For me it is mind-blowing how electronic circuits can make the marriage of the virgin made by Raphael Sanzio in a screen</p>
+                        <p class="article-body intro-disabled" id="objectiveContent">My main objective is work with what I love, technology. I chose this area because it is a pleasure to work with it, I love to build and rebuild the problems in my mind and find the best way to do it. Being technology the application of scientific knowledge for practical purposes, it can be used to help people around the world in a simple way. For me it is mind-blowing how electronic circuits can be used as a learning platform and many other ways to make our lives easier.</p>
                 </main>
                 <footer class="article-recent-secondary">
-                        <img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/239395280_652997642341803_966480447420246545_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=hrKPaTvvnVcAX9nlQtd&_nc_ht=scontent.fvcp4-1.fna&oh=d31e52679701f0c932cd10322f197ebb&oe=615A5AD8" alt="Image of goals" class="article-image">
+                        <img src="https://i.ibb.co/8x3RXbF/sticky-paper-postit-goals-objective.jpg" alt="Image of goals" class="article-image">
                 </footer>
             </article>
         </main>
@@ -210,31 +201,20 @@
             <article class="sidebar-widget">
                     <header>
                         <h2 class="widget-title" id="projTitle">My best college project, Sapiens Machina</h2>
-                        <img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/240766045_652997099008524_6418577824028212976_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=Cp_dy_NAhbAAX8O9iV1&_nc_ht=scontent.fvcp4-1.fna&oh=3ec7aebf38c23ca6e5b285e280ebb215&oe=615A6657" alt="A image to illustrate connections between different people" class="article-image">
+                        <img src="https://i.ibb.co/Sy1Pnqm/medium-network-connections-connect-colors-blue-red-green-yellow.jpg" alt="A image to illustrate connections between different people" class="article-image">
                     </header>
                     <main>
                         <p class="widget-body" id="projContent">When I was just a sophomore in high school, in the first year of social isolation the school had problems to achieve some students, mainly the countryside students who do not have internet access, so our team elaborate a http modem to provide the classes and get their notes.</p>
+                        <a href="https://r2d2.culturaporto.org.br/" target="_blank">See the project clicking here</a>
                     </main>
-            </article>
-            <article>
-                    <div class="sidebar-widget">
-                        <div class="recent-post">
-                            <header>
-                                <h2 class="widget-title" id="philosophyTitle">My daily life philosophy</h2>
-                                <h3 class="widget-recent-post-title">Albert Camus</h3>
-                            </header>
-                            <main>
-                                <p><blockquote id="philosophyContent">"The struggle itself towards the heights is enough to fill a man's heart. One must imagine Sisyphus happy"</blockquote></p>
-                                <a href="https://www.sparknotes.com/philosophy/sisyphus/summary/"  class="read-more" target="_blank">read more</a>
-                            </main>
-                    </div><!--recent-post-->
             </article>
             </div><!--sidebar-widget -->
         </aside>
     </div><!--container-flex-->
     <footer id = "social-media">
-        <a href="https://www.linkedin.com/in/ryan-costa-7ba1b7216/" target="_blank"><span class="fab fa-linkedin-in social-media  fa-2x"></span></a>
-        <a href="https://github.com/Ryan-R-C" target="_blank"><span class="fab fa-github social-media  fa-2x"></span></a>
+        <a href="https://www.linkedin.com/in/ryan-costa-7ba1b7216/" target="_blank"><span class="fab fa-linkedin-in social-media my fa-2x" alt="link to my linkedin"></span>
+        </a>
+        <a href="https://github.com/Ryan-R-C" target="_blank"><span class="fab fa-github social-media  fa-2x" alt="link to my github"></span></a>
     </footer>
     <script src="javascript/main.js"></script>
     <script src="javascript/language-switcher-resume.js"></script>

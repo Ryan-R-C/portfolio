@@ -1,29 +1,35 @@
 /*Here starts the "presentation" of the page*/
-#first{
-    padding-top: 3rem;
+#header-resume{
+    overflow: hidden;
+}
+#header-resume_landing-page{
+    height: calc(100vh - 121px - 3rem);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    max-height: 440px;
     width: 100%;
     background-image: linear-gradient(to right, var(--custom-heavyblue), var(--main-color));
     display: flex;
     justify-content: right;
-    max-height: 460px;
     overflow: hidden;
     text-align: left;
 }
-#pageTitleInHeader{
-    color: var(--dontchange-white);
-    font-size: 2.5rem;
-    text-align: left;
-}
-
-#header-content{
+#header-resume_landing-page_content{
     width: 30%;
     font-weight: 300;
     justify-content: space-evenly;
     padding-bottom: 2rem;
 }
-#header-image{
+#header-resume_landing-page_content_title{
+    color: var(--dontchange-white);
+    font-size: 2.5rem;
+    text-align: left;
+}
+#header-resume_landing-page_image-of-mine{
     width: 55%;
     object-fit: contain;
+    min-width: 496.094px;
+    min-height: 457px;
 }
 #separator{
     background-color: var(--custom-dark);
@@ -34,25 +40,29 @@
     color: var(--almost-black);
 }
 #projContent{
-    margin-top: 19.920px;
+    margin-top: 20px;
 }
 @media (max-width: 840px){
-    #first{
+    #header-resume_landing-page{
         padding-top: 1rem;
         flex-direction: column;
-        max-height: 600px;
+        justify-content: space-between;
+        height: calc(100vh - 121px - 3rem);
+        min-height: 680px;
     }
-    #pageTitleInHeader{
+    #header-resume_landing-page_content_title{
         text-align: center;
-        font-size: 2;
+        font-size: 2rem;
     }
-    #header-content{
+    #header-resume_landing-page_content{
         width: 80%;
         margin: 0 auto;
         text-align: center;
     }
-    #header-image{
-        width: 70%;
+    #header-resume_landing-page_image-of-mine{
+        min-width: 350px;
+        max-width: 480px;
+        width: 80%;
         margin: 0 auto;
         transform: translateX(-25px);
     }

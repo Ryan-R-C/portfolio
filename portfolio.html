@@ -5,26 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon-->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.ibb.co/T2xnq2P/favicon.png" type="image/x-icon">
     <!--CSS-->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css"><!--Only this page css-->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="css/main-typograph.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/language-switcher.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/dropdown-menu.css">
+    <link rel="stylesheet" href="css/fade.css">
+    <link rel="stylesheet" href="css/main-layout.css">
+    <link rel="stylesheet" href="css/resume-aside.css">
+    <link rel="stylesheet" href="css/resume+contact.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/footer.css">
     <!--Font Awesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>    
     <title>Portfolio - Ryan Costa</title>
 </head>
 <body>
     <header>
-        <div id="top">
+        <section id="top">
             <div id="dark-theme-div">
                 <label for="switch">
                     <input type="checkbox" id="switch">
                     <span id="theme-changer"></span>
                 </label>
             </div><!--dark-theme-div-->
-            <div id="language">
+            <section id="language">
                 <div id="selected-lang">
-                    <img src="https://www.countryflags.io/us/flat/32.png" alt="flag" id="select-lang-flag">
+                    <img src="https://www.countryflags.io/us/flat/32.png" alt="Flag of laguage switcher" id="select-lang-flag">
                     <p id="select-lang" class="lang">English</p>
                 </div><!--selected-lang-->
                 <ul>
@@ -41,68 +53,98 @@
                         <a 
                         id="it" Language="Italiano" HTMLlang="it" class="lang">Italiano</a></li>
                 </ul>
-            </div><!--language-->
-        </div><!--top-->
-        <div id="nav-bar">
-            <div>
-                <h2>Ryan Costa</h2>
+            </section><!--language-->
+        </section><!--top-->
+        <section id="nav-bar">
+            <div class="nav-bar_elements">
+                <h2><em>Ryan </em><em id="disappear-in-small-devices">Costa</em></h2>
                 <h3>Your next choice</h3>
             </div>
-            <div>
-                <nav id=nav>
-                    <img src="images/menu.png" alt="menu"
-                    id = "menu-icon">
-                    <ul id="menu-list">
-                        <li>
-                            <a href="portfolio.html" class="current-page">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Resume</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact me</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div><!--nav-bar-->
+            <nav id="nav" class="nav-bar_elements">
+                <button id = "menu-btn"><span class="fas fa-bars b" alt="menu" id="menu-icon"></span></button>
+                <ul id="menu-list">
+                    <li>
+                        <a href="portfolio.html"  class="current-page" id="portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="index.html" id="resume">Résumé</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" id="contact">Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+        </section><!--nav-bar-->
     </header>
-    <div class="container container-flex">
-        <main id="main">
+    
+        <main id="main-portfolio">
             <h1 id="title">My projects
             </h1>
-            <h2 id="PWTitle">Pillar of Websites</h2>
-            <p id="PWContent">
-                This project, was, basecally, a tutorial of HTML, CSS and JavaScript for beginners. Simple static page.</p>
-            <picture>
-                <source media="(max-width:620px)" srcset="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/242155513_659512901690277_4337439405369279483_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=XjgngOCLGLoAX_AedO2&_nc_ht=scontent.fvcp4-1.fna&oh=e7a8a33d6aaf90a4731e7d5a0c7e0dca&oe=616A329F">
-                <img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/241251466_652997659008468_8326882448769418713_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=fhZlxwQS1okAX9h7EL1&_nc_ht=scontent.fvcp4-1.fna&oh=92f0e3834c346aa17d93c5e3c440a993&oe=615ADD48" alt="">
-            </picture>
-            <p class="read-more">
-                See more clicking <a class="here" href="myProjets/page.html" target="_blank">here</a></p>
-            <hr>
-            <h2 id="PPTitle">Product Page</h2>
-            <p id="PPContent">
-                I did a product page, for that exemple I made one of my PlayStation, my favorite console. It is completely responsive.</p>
-              <picture>
-                <source media="(max-width:620px)" srcset="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/242241966_659512885023612_6845010659050291476_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=JE3femFzzeUAX_PMu40&_nc_ht=scontent.fvcp4-1.fna&oh=b4cffa883f9f4cc091ee668dcb9c8cde&oe=616822F8">
-                <img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/240999064_652997155675185_2949191112309355963_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=ZrI7xd0R9DsAX_2EXy1&_nc_ht=scontent.fvcp4-1.fna&oh=0027574109fd0678885d36a06f0083d7&oe=615AC362" alt="">
-            </picture>
-            <p class="read-more">See more clicking <a class="here" href="myProjets/ps4.html" target="_blank">here</a></p>
-            <h2 id="BTSTile">Bootstrap, Services Provision</h2>
-            <p id="BTSContent">This was my first HTML project using Bootstrap, a library of CSS3 and JavaScript, it is powerfull and maximize the time of styling the page. I got just a few days to do the project. For the content I did it like a service provision of movie Terminator.</p>
-            <picture>
-                <source media="(max-width:620px)" srcset="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/242201515_659512895023611_4394761274993798298_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=ZnwXVQdMIZcAX86FvW4&tn=xe6a7TMp3QJxeLll&_nc_ht=scontent.fvcp4-1.fna&oh=1061157804ee25ce5956f6383edbaf97&oe=61691173">
-                <img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/p180x540/241845048_656879218620312_2540424480626597778_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=R-AoYzDBIRoAX_wL23C&_nc_ht=scontent.fvcp4-1.fna&oh=2ff74cda8b115fd8370f1c8eb92be4fc&oe=61647B6B" alt="">
-            </picture>
-            <p class="read-more">See more clicking <a class="here" href="myProjets/bootstrapEx.html" target="_blank">here</a></p>
+            <div class="grid">
+                <section class="grid__section">
+                    <div class="grid__section__content">
+                        <h2 id="PWTitle">Pillars of Websites</h2>
+                        <p id="PWContent">
+                            This project was basically a tutorial of HTML, CSS and JavaScript for beginners. My first project using flexbox, a good css property that allows a work with the positioning and the element's order. Simple static responsive page.
+                        </p>
+                    </div>
+                    <a class="grid__section__aside" href="myProjets/page.html" target="_blank">
+                        <picture class="grid__section__aside__image">
+                            <source media="(min-width:780px)" srcset="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/242155513_659512901690277_4337439405369279483_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=XjgngOCLGLoAX_AedO2&_nc_ht=scontent.fvcp4-1.fna&oh=e7a8a33d6aaf90a4731e7d5a0c7e0dca&oe=616A329F">
+                            <img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/241251466_652997659008468_8326882448769418713_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=VErAAUunRhMAX-OCPSt&_nc_ht=scontent.fvcp4-1.fna&oh=463f593ee400e58ad71dbd3a5b86d340&oe=61826A48" alt="">
+                        </picture>
+                    </a>
+                </section>
+                <section class="grid__section">
+                    <div class="grid__section__content">
+                        <h2 id="PPTitle">Product Page</h2>
+                        <p id="PPContent">
+                            I did a product page, for that exemple I made one of my PlayStation, my favorite console. A good example of a good UI. And in this project was used positioning relative and absolute with flexbox. It is completely responsive.</p>
+                        </div>
+                        <a class="grid__section__aside" href="myProjets/ps4.html" target="_blank">
+                            <picture class="grid__section__aside__image">
+                                <source media="(min-width:780px)" srcset="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/242241966_659512885023612_6845010659050291476_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=JE3femFzzeUAX_PMu40&_nc_ht=scontent.fvcp4-1.fna&oh=b4cffa883f9f4cc091ee668dcb9c8cde&oe=616822F8">
+                                <img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/240999064_652997155675185_2949191112309355963_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=wtPok7RpV04AX-fHKqM&_nc_ht=scontent.fvcp4-1.fna&oh=449d76b2e83f3376fffdb3363f24e984&oe=61825062" alt="">
+                            </picture>                        
+                        </a>
+                </section>
+                <section class="grid__section">
+                    <div class="grid__section__content">
+                        <h2 id="BTSTile">Bootstrap, Services Provision</h2>
+                        <p id="BTSContent">
+                            This was my first HTML project using Bootstrap, a library of CSS3 and JavaScript, it is powerfull and maximize the time of styling the page. I got just a few days to do the project. For the content I did it like a service provision of SKYNET from Terminator's movie.
+                        </p>
+                    </div>
+                    <a class="grid__section__aside" href="myProjets/bootstrapEx.html" target="_blank">
+                        <picture class="grid__section__aside__image">
+                            <source media="(min-width:780px)" srcset="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/242201515_659512895023611_4394761274993798298_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=ZnwXVQdMIZcAX86FvW4&tn=xe6a7TMp3QJxeLll&_nc_ht=scontent.fvcp4-1.fna&oh=1061157804ee25ce5956f6383edbaf97&oe=61691173">
+                            <img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/p180x540/241845048_656879218620312_2540424480626597778_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=R-AoYzDBIRoAX_wL23C&_nc_ht=scontent.fvcp4-1.fna&oh=2ff74cda8b115fd8370f1c8eb92be4fc&oe=61647B6B" alt="">
+                        </picture>
+                    </a>
+                </section>
+                <section class="grid__section">
+                    <div class="grid__section__content">
+                        <h2 id="firstClientTitle">My First Client</h2>
+                        <p  id="firstClientContent">
+                            This barbershop was my first client. I did the interface design and created all HTML and CSS, always having in mind the visual identity of the client. In a nutshell it was a mobile first using just HTML5, CSS3 and JavaScript, made to show my skills working with fundamental tools.
+                        </p>
+                    </div>
+                    <a class="grid__section__aside" href="https://ryan-r-c.github.io/Barbershop-Client/" target="_blank">
+                        <picture class="grid__section__aside__image">
+                            <source media="(min-width:780px)" srcset="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/244389240_670140973960803_2929579127045619366_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=w0Dysusz0u0AX-RM3FY&_nc_ht=scontent.fvcp4-1.fna&oh=a9dd77f8c8a9f58f6fbd88381a55cfe2&oe=618079C2">
+                            <img src="https://scontent.fvcp4-1.fna.fbcdn.net/v/t1.6435-9/244418857_670141000627467_1404920172389054657_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=2BnfkOZcAR4AX9ixN7c&_nc_ht=scontent.fvcp4-1.fna&oh=d19ebbea1f59e0097337a015b4d9422d&oe=6181AC74" alt="">
+                        </picture>
+                    </a>
+                </section>
+            </div>
         </main>
-    </div>
     <footer id = "social-media">
-        <a href="https://www.linkedin.com/in/ryan-costa-7ba1b7216/" target="_blank"><span class="fab fa-linkedin-in social-media  fa-2x"></span></a>
-        <a href="https://github.com/Ryan-R-C" target="_blank"><span class="fab fa-github social-media  fa-2x"></span></a>
+        <footer id = "social-media">
+            <a href="https://www.linkedin.com/in/ryan-costa-7ba1b7216/" target="_blank"><span class="fab fa-linkedin-in social-media my fa-2x" alt="link to my linkedin"></span>
+            </a>
+            <a href="https://github.com/Ryan-R-C" target="_blank"><span class="fab fa-github social-media  fa-2x" alt="link to my github"></span></a>
     </footer>
     <script src="javascript/main.js"></script>
     <script src="javascript/language-switcher-portfolio.js"></script>
 </body>
-</html>
+</html> 

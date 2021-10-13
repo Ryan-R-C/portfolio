@@ -1,0 +1,9 @@
+
+footer#social-media{
+    text-align: center;
+    background-color: var(--custom-dark);
+    padding: .7rem 0;
+}
+footer#social-media a, footer#social-media p{
+    color: var(--dontchange-white);
+}

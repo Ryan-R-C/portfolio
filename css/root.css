@@ -1,0 +1,23 @@
+html{
+    scroll-behavior: smooth;
+}
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*----------The colors in :root makes the style easier to do----------*/
+:root{
+    --main-color: #6563ff;
+    --almost-black: #011113;
+    --shadow-color: #0111134c;
+    --custom-white: #f8f8f8;
+    --dontchange-white: #ffff;
+    --custom-gray: #707070;
+    --curstom-light-gray: #d1d1d1;
+    --custom-lightblue: #1792d2;
+    --custom-heavyblue: #143774;
+    --custom-dark: #1F1F1F;
+    --jscolor: #f6dd04;
+    --htmlcolor: #f16524;
+    --csscolor: #0076be;
+}

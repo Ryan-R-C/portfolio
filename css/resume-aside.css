@@ -1,0 +1,7 @@
+h3{
+    font-size: 1.5rem;
+    color: rgb(90, 90, 90)
+}
+li, blockquote{
+    color: var(--almost-black);
+}

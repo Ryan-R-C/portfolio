@@ -1,0 +1,9 @@
+.intro-disabled{
+    opacity: 0;
+    transform: translateY(1.5rem);
+    transition: 0.5s all ease-in-out;
+}
+.intro-active{
+    opacity: 1;
+    transform: translateY(-.2rem);
+}

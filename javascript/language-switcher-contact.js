@@ -1,21 +1,14 @@
-/*===============
-Language Switcher
-===============*/
-/*Elements that change the language*/
-const LanguageElement = document.querySelector("#language")
-const link = document.querySelectorAll("a.lang")
-/*All elements that will be "translated" to other language
-OBS.: They must have the same id's in data*/
-const selectedLang = document.querySelector("#select-lang")//Get this element to change its content to the selected Lang
-const selectFlag = document.querySelector("#select-lang-flag")
 
+/*----------------
+Contact me content
+----------------*/
 const contactTitle = document.querySelector("#contactTitle")
 const contactContent = document.querySelector("#contactContent")
-
 const schedulesTitle = document.querySelector("#schedulesTitle")
 const schedulesContent = document.querySelector("#schedulesContent")
 const socialContent = document.querySelector("#socialContent")
 const me = document.querySelector("#me")
+
 
 
 link.forEach(element => {
@@ -28,7 +21,12 @@ link.forEach(element => {
         document.documentElement.setAttribute("lang", `${HTMLlang}`)
         
         selectedLang.textContent = `${attributeLang}`
+
         selectFlag.src = `https://www.countryflags.io/${attributeId}/flat/32.png`
+
+        portfolio.textContent = data[attributeLang].portfolio
+        resume.textContent = data[attributeLang].resume
+        contact.textContent = data[attributeLang].contact
 
         contactTitle.textContent = data[attributeLang].contactTitle
 
@@ -47,7 +45,13 @@ link.forEach(element => {
 const data =
 {
 	"English":
-	{"contactTitle":
+	{"portfolio":
+        "Portfolio",
+    "resume":
+        "Résumé",
+    "contact":
+        "Contact me",
+    "contactTitle":
         "Contact me",
     "contactContent":
         "You can contact me at my e-mail:",
@@ -60,7 +64,13 @@ const data =
     "me":
         "Me and my wife"},
     "Português":
-    {"contactTitle":
+    {"portfolio":
+        "Portfólio",
+    "resume":
+        "Currículo",
+    "contact":
+    "Contate-me",
+    "contactTitle":
         "Contate-me",
     "contactContent":
         "Você pode entrar em contato comigo pelo meu e-mail:",
@@ -75,7 +85,14 @@ const data =
 
     },
     "Español":
-    {"contactTitle":
+    {"portfolio":
+        "Portfólio",
+    "resume":
+        "Currículo",
+    "contact":
+        "Contate-me",
+
+    "contactTitle":
         "Contáctame",
     "contactContent":
         "Puedes contactarme a mi correo electrónico:",
@@ -89,7 +106,13 @@ const data =
         "Yo y mi esposa" 
     },
     "Italiano":
-    {"contactTitle":
+    {"portfolio":
+        "Portfolio",
+    "resume":
+        "Curriculum",
+    "contact":
+        "Contattami",
+    "contactTitle":
         "Contattami",
     "contactContent":
         "Puoi contattarmi alla mia email:",

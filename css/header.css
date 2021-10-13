@@ -1,0 +1,93 @@
+/*-----------------------------------------------
+Top layout and formatation that contains language switcher and theme-changer
+-----------------------------------------------*/
+#top{
+    display: flex;
+    background-color: var(--custom-white);
+    justify-content: space-between;
+    margin: 0 auto;
+    
+    max-height: 32px;
+}
+
+
+header{
+    min-width: 100%;
+    margin: 0;
+}
+#nav-bar{
+    background-color: var(--custom-dark);
+    color: var(--custom-white);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    min-height: 89px;
+}
+#dark-theme-div, #language, .nav-bar_elements{
+    margin: 0 2.5rem;
+} 
+#nav-bar .nav-bar_elements{
+    margin: 0.5rem 2.5rem;
+}
+
+#nav-bar h2,h3{
+    font-weight: bold;
+}
+#nav-bar h2{
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: var(--dontchange-white);
+}
+#nav-bar h3{
+    color: var(--custom-lightblue);
+    margin: 0 auto;
+    font-size: 13px;
+}
+header{
+    min-width: 100%;
+    margin: 0;
+}
+
+#nav-bar{
+    background-color: var(--custom-dark);
+    color: var(--custom-white);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    min-height: 89px;
+}
+#nav-bar div{
+    margin: 0.5rem 2.5rem;
+}
+#nav-bar h2,h3{
+    font-weight: bold;
+}
+#nav-bar h2{
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: var(--dontchange-white);
+}
+#nav-bar h3{
+    color: var(--custom-lightblue);
+    margin: 0 auto;
+    font-size: 13px;
+}
+.current-page{
+    border-bottom: 1px solid var(--dontchange-white);
+}
+nav ul{
+    display: flex;
+}
+header ul li a{
+    text-decoration: none;
+    color: var(--dontchange-white)
+}
+
+@media (max-width: 450px){
+    h2, h3{
+        font-size: 1.5rem;
+    }
+    #disappear-in-small-devices{
+        display: none;
+    }
+}

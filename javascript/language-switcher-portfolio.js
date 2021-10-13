@@ -1,13 +1,7 @@
-/*===============
-Language Switcher
-===============*/
-/*Elements that change the language*/
-const LanguageElement = document.querySelector("#language")
-const link = document.querySelectorAll("a.lang")
-/*All elements that will be "translated" to other language
-OBS.: They must have the same id's in data*/
-const selectedLang = document.querySelector("#select-lang")//Get this element to change its content to the selected Lang
-const selectFlag = document.querySelector("#select-lang-flag")
+
+/*---------------
+Portfolio content
+---------------*/
 const title = document.querySelector("#title")
 const PWTitle = document.querySelector("#PWTitle")
 const PWContent = document.querySelector("#PWContent")
@@ -17,6 +11,8 @@ const readMore = document.querySelectorAll(".readMore")
 const here = document.querySelectorAll(".here")
 const BTSTile = document.querySelector("#BTSTile")
 const BTSContent = document.querySelector("#BTSContent")
+const firstClientTitle = document.querySelector("#firstClientTitle")
+const firstClientContent = document.querySelector("#firstClientContent")
 
 link.forEach(element => {
     element.addEventListener('click', () => {
@@ -29,6 +25,11 @@ link.forEach(element => {
 
         selectedLang.textContent = `${attributeLang}`
         selectFlag.src = `https://www.countryflags.io/${attributeId}/flat/32.png`
+
+        portfolio.textContent = data[attributeLang].portfolio
+        resume.textContent = data[attributeLang].resume
+        contact.textContent = data[attributeLang].contact
+
 
         title.textContent = data[attributeLang].title
 
@@ -47,18 +48,28 @@ link.forEach(element => {
         BTSTile.textContent = data[attributeLang].BTSTile
         
         BTSContent.textContent = data[attributeLang].BTSContent
+
+        firstClientTitle.textContent = data[attributeLang].firstClientTitle        
+
+        firstClientContent.textContent = data[attributeLang].firstClientContent
         
     })
 });
 const data =
 {
 	"English":
-	{"title":
+	{"portfolio":
+        "Portfolio",
+    "resume":
+        "Résumé",
+    "contact":
+        "Contact me",
+    "title":
                 "My projects",
 	"PWTitle":
                 "Pillars of Websites",
 	"PWContent":
-                "This project was basically a tutorial of HTML, CSS and JavaScript for beginners. Simple static responsive page.",
+                "This project was basically a tutorial of HTML, CSS and JavaScript for beginners. My first project using flexbox, a good css property that allows a work with the positioning and the element's order. Simple static responsive page.",
 	"readMore":
                 "See more clicking ",
         "here":
@@ -66,19 +77,30 @@ const data =
 	"PPTitle":
                 "Product Page",
 	"PPContent":
-                "I did a product page, for that exemple I made one of my PlayStation, my favorite console. It is completely responsive.",
+                "I did a product page, for that exemple I made one of my PlayStation, my favorite console. A good example of a good UI. And in this project was used positioning relative and absolute with flexbox. It is completely responsive.",
     "BTSTile":
                 "Bootstrap, Services/ Provision",
     "BTSContent":
-                "This was my first HTML project using Bootstrap, a library of CSS3 and JavaScript, it is powerfull and maximize the time of styling the page. I got just a few days to do the project. For the content I did it like a service provision of the movie Terminat"
+                "This was my first HTML project using Bootstrap, a library of CSS3 and JavaScript, it is powerfull and maximize the time of styling the page. I got just a few days to do the project. For the content I did it like a service provision of SKYNET from Terminator's movie.",
+    "firstClientTitle":
+                "My First Client",
+    "firstClientContent":
+                "This barbershop was my first client. I did the interface design and created all HTML and CSS, always having in mind the visual identity of the client. In a nutshell it was a mobile first using just HTML5, CSS3 and JavaScript, made to show my skills working with fundamental tools."
     },
     "Português":
-    {"title":
+    {"portfolio":
+        "Portfólio",
+    "resume":
+        "Currículo",
+    "contact":
+        "Contate-me",
+
+    "title":
                 "Meus projetos",
     "PWTitle":
                 "Pilares dos Websites",
     "PWContent":
-                "Este projeto foi, basicamente, um tutorial de HTML, CSS e JavaScript para iniciantes. Criada uma página estática e responsiva simples.",
+                "Este projeto foi basicamente um tutorial de HTML, CSS e JavaScript para iniciantes. Meu primeiro projeto usando flexbox, uma boa propriedade css que permite trabalhar com o posicionamento e a ordem dos elementos. Página responsiva estática simples.",
     "readMore":
                 "Veja mais clicando",
     "here":
@@ -90,15 +112,26 @@ const data =
                 "BTSTile":
                 "Bootstrap, Prestação de Serviços",
     "BTSContent":
-                "Este foi meu primeiro projeto HTML usando Bootstrap, uma biblioteca de CSS3 e JavaScript, é muito poderoso e maximiza o tempo de estilização da página. Tive apenas alguns dias para fazer o projeto. Para conteúdo fiz como uma prestação de serviço do filme Terminator."       
+                "Este foi meu primeiro projeto HTML usando Bootstrap, uma biblioteca de CSS3 e JavaScript, é poderosa e maximiza o tempo de estilização da página. Precisei apenas alguns dias para fazer o projeto. Sobre o conteúdo eu fiz como uma prestação de serviço da SKYNET do filme Terminator.",
+                "firstClientTitle":
+                "Meu primeiro cliente",
+    "firstClientContent":
+                "Essa barbearia foi meu primeiro cliente. Fiz o design da interface e criei todo HTML e CSS, sempre tendo em mente a identidade visual do cliente. Resumindo foi um mobile primeiro usando apenas HTML5, CSS3 e JavaScript, feito para mostrar minhas habilidades trabalhando com ferramentas fundamentais."       
             },
     "Español":
-    {"title":
+    {"portfolio":
+        "Portfolio",
+    "resume":
+        "Currículum",
+    "contact":
+        "Contáctame",
+
+    "title":
                 "Mis proyectos",
     "PWTitle":
                 "Pilares de los sitios web",
     "PWContent":
-                "Este proyecto fue básicamente un tutorial de HTML, CSS y JavaScript para principiantes. Página estática sensible simple.",
+                "Este proyecto fue básicamente un tutorial de HTML, CSS y JavaScript para principiantes. Mi primer proyecto usando flexbox, una buena propiedad css que permite trabajar con el posicionamiento y el orden de los elementos. Página de respuesta estática simple.",
     "readMore":
                 "Ver más haciendo clic",
     "here":
@@ -106,18 +139,29 @@ const data =
     "PPTitle":
                 "Página del producto",
     "PPContent":
-                "Hice una página de producto, para ese ejemplo hice una de mi PlayStation, mi consola favorita. Es completamente sensible.",
+                "Hice una página de producto, para ese ejemplo hice una de mi PlayStation, mi consola favorita. Un buen ejemplo de una buena interfaz de usuario. Y en este proyecto se utilizó el posicionamiento relativo y absoluto con flexbox. Es completamente receptivo.",
     "BTSTile":
                 "Bootstrap, prestación de servicios",
     "BTSContent":
-                "Este fue mi primer proyecto HTML usando Bootstrap, una biblioteca de CSS3 y JavaScript, es poderoso y maximiza el tiempo de estilo de la página. Solo tengo unos días para hacer el proyecto. Para el contenido lo hice como una prestación de servicios de la película Terminator."},  
+                "Este fue mi primer proyecto HTML usando Bootstrap, una biblioteca de CSS3 y JavaScript, es poderoso y maximiza el tiempo de estilo de la página. Solo tengo unos días para hacer el proyecto. Para el contenido lo hice como una prestación de servicios de SKYNET de la película de Terminator.",
+    "firstClientTitle":
+                "Mi primer cliente",
+    "firstClientContent":
+                "Esta barbería fue mi primer cliente. Hice el diseño de la interfaz y creé todo el HTML y CSS, siempre teniendo en cuenta la identidad visual del cliente. En pocas palabras, fue un dispositivo móvil primero usando solo HTML5, CSS3 y JavaScript, hecho para mostrar mis habilidades trabajando con herramientas fundamentales."
+    },
     "Italiano":
-    {"title":
+    {"portfolio":
+        "Portfolio",
+    "resume":
+        "Curriculum",
+    "contact":
+        "Contattami",
+    "title":
                 "I miei progetti",
     "PWTitle":
                 "Pilastri dei siti web",
     "PWContent":
-                "Questo progetto era fondamentalmente un tutorial di HTML, CSS e JavaScript per principianti. Semplice pagina reattivo statica.",
+                "Questo progetto era fondamentalmente un tutorial di HTML, CSS e JavaScript per principianti. Il mio primo progetto con flexbox, una buona proprietà css che permette di lavorare con il posizionamento e l'ordine degli elementi. Pagina reattiva statica semplice.",
     "readMore":
                 "Vedi di più cliccando ",
     "here":
@@ -125,10 +169,14 @@ const data =
     "PPTitle":
                 "Pagina del prodotto",
     "PPContent":
-                "Ho creato una pagina del prodotto, per quell'esempio ho realizzato una delle mie PlayStation, la mia console preferita. È completamente responsive.",
+                "Ho realizzato una pagina del prodotto, per quell'esempio ho realizzato una delle mie PlayStation, la mia console preferita. Un buon esempio di una buona interfaccia utente. E in questo progetto è stato utilizzato il posizionamento relativo e assoluto con flexbox. È completamente reattivo.",
     "BTSTile":
                 "Bootstrap, fornitura di servizi",
     "BTSContent":
-                "Questo è stato il mio primo progetto HTML che utilizza Bootstrap, una libreria di CSS3 e JavaScript, è potente e massimizza il tempo di stile della pagina. Ho solo pochi giorni per realizzare il progetto. Per il contenuto l'ho fatto come una fornitura di servizi del film Terminator."
+                "Questo è stato il mio primo progetto HTML che utilizza Bootstrap, una libreria di CSS3 e JavaScript, è potente e massimizza il tempo di stile della pagina. Ho solo pochi giorni per realizzare il progetto. Per il contenuto l'ho fatto come una fornitura di servizi di SKYNET dal film di Terminator.",
+    "firstClientTitle":
+                "Il mio primo cliente",
+    "firstClientContent":
+                "Questo negozio di barbiere è stato il mio primo cliente. Ho realizzato il design dell'interfaccia e ho creato tutto HTML e CSS, tenendo sempre presente l'identità visiva del cliente. In poche parole è stato un mobile first utilizzando solo HTML5, CSS3 e JavaScript, fatto per mostrare le mie capacità di lavorare con strumenti fondamentali."
             }    
 }

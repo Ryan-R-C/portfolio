@@ -1,0 +1,52 @@
+
+/*----------This class is what makes dark-theme possible----------*/
+.dark-theme:root{
+    --almost-black: #f8f8f8;
+    --custom-lightblue: #1792d2;
+    --custom-heavyblue: #143774;
+    --custom-white:  #040404; 
+    --custom-gray:  #d1d1d1;
+    --curstom-light-gray:  #111111;
+}
+
+    /*------------------
+    Starts theme-changer
+    ------------------*/
+    input[type="checkbox"]{
+        -webkit-appearance: none;
+        visibility: hidden;
+        display: none;
+    }
+    #theme-changer{
+        transform: translateY(30%);
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 20px;
+        background-color: var(--almost-black);
+        cursor: pointer;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: ease-in 0.5s;
+    }
+    input[type="checkbox"]:checked ~ #theme-changer{
+        background-color: var(--almost-black);
+    }
+    #theme-changer:before{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        background-color: var(--custom-white);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        transition: 0.5s;
+    
+    }
+    input[type="checkbox"]:checked ~ #theme-changer:before{
+        transform: translateX(130%);
+    }
+        /*-----------------
+        close theme-changer
+        -----------------*/    

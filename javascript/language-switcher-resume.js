@@ -1,25 +1,17 @@
-/*===============
-Language Switcher
-===============*/
-/*Elements that change the language*/
-const LanguageElement = document.querySelector("#language")
-const link = document.querySelectorAll("a.lang")
-/*All elements that will be "translated" to other language
-OBS.: They must have the same id's in data*/
-const selectedLang = document.querySelector("#select-lang")//Get this element to change its content to the selected Lang
-const selectFlag = document.querySelector("#select-lang-flag")
 
 /*------------
 Resume content
-------------*/
-const pageTitleInHeader = document.querySelector("#pageTitleInHeader")
-const pageTitleContent = document.querySelector("#pageTitleContent")
+-------------*/
+const pageTitleInHeader = document.querySelector("#header-resume_landing-page_content_title")
+const pageTitleContent = document.querySelector("#header-resume_landing-page_content_text")
 const WhoIm = document.querySelector("#WhoIm")
 const myProj = document.querySelector("#myProj")
 const meTitle = document.querySelector("#meTitle")
 const meContent = document.querySelector("#meContent")
 const acFormationTitle = document.querySelector("#acFormationTitle")
 const acFormationContent = document.querySelector("#acFormationContent")
+const techFormationTitle = document.querySelector("#techFormationTitle")
+const techormationContent = document.querySelector("#techormationContent")
 const mySchool = document.querySelector("#mySchool")
 const coursesTitle = document.querySelector("#coursesTitle")
 const objectiveTitle = document.querySelector("#objectiveTitle")
@@ -28,6 +20,8 @@ const projTitle = document.querySelector("#projTitle")
 const projContent = document.querySelector("#projContent")
 const philosophyTitle = document.querySelector("#philosophyTitle")
 const philosophyContent = document.querySelector("#philosophyContent")
+//This is all courses li's
+const courses = document.querySelector("#courses")
 
 link.forEach(element => {
     element.addEventListener('click', () => {
@@ -38,11 +32,20 @@ link.forEach(element => {
         const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
         document.documentElement.setAttribute("lang", `${HTMLlang}`)
 
+        courses.innerHTML = ""                        //Removes all content from courses
+        courses.innerHTML = dataCourses[attributeLang].join(' ')//Add all content in specific language in courses
+
         selectedLang.textContent = `${attributeLang}`
         selectFlag.src = `https://www.countryflags.io/${attributeId}/flat/32.png`
         /*--------------
         Resume Atributes
         --------------*/
+
+        portfolio.textContent = data[attributeLang].portfolio
+        resume.textContent = data[attributeLang].resume
+        contact.textContent = data[attributeLang].contact
+
+
         pageTitleInHeader.innerHTML = data[attributeLang].pageTitleInHeader
 
         pageTitleContent.innerHTML = data[attributeLang].pageTitleContent
@@ -51,14 +54,14 @@ link.forEach(element => {
         myProj.textContent = data[attributeLang].myProj
 
         meTitle.textContent = data[attributeLang].meTitle
-
         meContent.textContent = data[attributeLang].meContent
         
         acFormationTitle.textContent = data[attributeLang].acFormationTitle
-        
         acFormationContent.textContent = data[attributeLang].acFormationContent
-        
         mySchool.textContent = data[attributeLang].mySchool
+
+        techFormationTitle.textContent = data[attributeLang].techFormationTitle
+        techormationContent.textContent = data[attributeLang].techormationContent 
         
         coursesTitle.textContent = data[attributeLang].coursesTitle
         
@@ -70,9 +73,6 @@ link.forEach(element => {
         
         projContent.textContent = data[attributeLang].projContent
         
-        philosophyTitle.textContent = data[attributeLang].philosophyTitle
-        
-        philosophyContent.textContent = data[attributeLang].philosophyContent
     })
 });
 const data =
@@ -81,6 +81,12 @@ const data =
 	{/*----
     Resume
     ----*/
+    "portfolio":
+        "Portfolio",
+    "resume":
+        "Résumé",
+    "contact":
+        "Contact me",
     "pageTitleInHeader": 
         "Hey.<br>I am Ryan.<br>Front-End Dev.",
     "pageTitleContent": 
@@ -92,32 +98,38 @@ const data =
     "meTitle":
         "Who I am",
     "meContent":
-        "I am Ryan Rodrigo Costa, software engineering student. I am a lively motivated person that will give my own blood to what I belive. In my breaks I study, read, play with my wife and code a lot.",
+        "I am Ryan Rodrigo Costa, software engineering student. I am a lively motivated person who give his own blood to what I belive. I love to solve problems, for the reason that I finish them knowing each time more, always reaching a clean code. Love to learn, to me the knowledge is never enough. And I like to work as a team, there is always someone to give good ideas and be sincere in the team.",
     "acFormationTitle":
         "Academic Formation.",
     "acFormationContent":
         "I am attending Software Engeneer in Uninter. One of the most complete courses about technology, 4 years, from the basics of planning projects to real applications.",
     "mySchool":
         "Meet my school",
+    "techFormationTitle":
+        "Technical Education",
+    "techormationContent":
+        "I am graduated on Front End by Alura, 170 hours and 18 courses! It went from the basics, such as HTML and CSS, to Javascript Animations and SEO.",
     "coursesTitle":
         "Extracurricular courses",
     "objectiveTitle":
         "Objectives",
     "objectiveContent":
-        "My main objective is work with my love, technology. I chose this area for, first, it is a pleasure work to me and, second, it has the hottest job market. Being technology the application of scientific knowledge for practical purposes, it can be used to help people around the world, to connect everybody in a simple way. For me it is mind-blowing how electronic circuits can make the marriage of the virgin made by Raphael Sanzio in a screen",
+        "My main objective is work with what I love, technology. I chose this area because it is a pleasure to work with it, I love to build and rebuild the problems in my mind and find the best way to do it. Being technology the application of scientific knowledge for practical purposes, it can be used to help people around the world in a simple way. For me it is mind-blowing how electronic circuits can be used as a learning platform and many other ways to make our lives easier.",
     "projTitle":
         "My best college project, Sapiens Machina",
     "projContent":
-        "When I was just a sophomore in high school, in the first year of social isolation the school had problems to achieve some students, mainly the countryside students who do not have internet access, so our team elaborate a http modem to provide the classes and get their notes. ",
-    "philosophyTitle":
-        "My daily life philosophy",
-    "philosophyContent":
-        "“The struggle itself towards the heights is enough to fill a man's heart. One must imagine Sisyphus happy“",
+        "When I was just a sophomore in high school, in the first year of social isolation the school had problems to achieve some students, mainly the countryside students who do not have internet access, so our team elaborate a http modem to provide the classes and get their notes. "
     },
     "Português":
     {/*----
     Resume
     ----*/
+    "portfolio":
+        "Portfólio",
+    "resume":
+        "Currículo",
+    "contact":
+        "Contate-me",
     "pageTitleInHeader":
          "Ei. <br> Eu sou Ryan. <br> Front-end Dev.",
      "pageTitleContent":
@@ -129,32 +141,38 @@ const data =
     "meTitle":
                 "Quem eu sou",
     "meContent":
-                'Sou Ryan Rodrigo Costa, estudante de engenharia de software. Sou uma pessoa animada e motivada que vai dar o meu próprio sangue ao que acredito. Nas minhas folgas estudo, leio, jogo com a minha esposa e "codo" muito.',
+                "Sou Ryan Rodrigo Costa, estudante de engenharia de software. Eu sou uma pessoa muito motivada que dá seu sangue àquilo que acredita. Amo resolver problemas, porque termino eles sabendo cada vez mais, sempre prezando por um código limpo. Amo aprender, o conhecimento nunca é suficiente. E gosto de trabalhar em equipe, sempre há alguém para dar boas ideias e ser sincero na equipe.",
     "acFormationTitle":
                 "Formação Acadêmica",
     "acFormationContent":
                 "Estou cursando Engenheiria de Software na Uninter. Um dos cursos mais completos sobre tecnologia, 4 anos, desde o básico de planejamento de projetos até aplicações reais.",
+    "techFormationTitle":
+                "Educação técnica",
+    "techormationContent":
+                "Sou formado em Front End pelo Alura, 170 horas e 18 cursos! Desde o básico, como HTML e CSS, até Animações Javascript e SEO.",
     "mySchool":
                 "Conheça minha faculdade",
-    "CoursesTitle":
+    "coursesTitle":
                 "Cursos extracurriculares",
     "objectiveTitle":
                 "Objetivos",
     "objectiveContent":
-                "Meu principal objetivo é trabalhar com meu amor, tecnologia. Escolhi esta área porque, em primeiro lugar, é um prazer para mim trabalhar com isso e, em segundo lugar, ela tem o mercado de trabalho bem aquecido. Sendo tecnologia a aplicação do conhecimento científico para fins práticos, pode ser usada para ajudar pessoas ao redor do mundo, para conectar todos de uma forma simples. Para mim é alucinante como os circuitos eletrônicos podem fazer O Casamento da Virgem de Raphael Sanzio em uma tela",
+                "Meu principal objetivo é trabalhar com o que adoro, tecnologia. Escolhi esta área porque é um prazer trabalhar com ela, amo construir e reconstruir os problemas na minha mente e encontrar a melhor forma de o fazer. Por ser a tecnologia a aplicação do conhecimento científico para fins práticos, ela pode ser usada para ajudar pessoas ao redor do mundo de uma forma simples. Para mim é impressionante como os circuitos eletrônicos podem ser usados como uma plataforma de aprendizagem e muitas outras maneiras de tornar nossas vidas mais fáceis.",
     "projTitle":
                 "Meu melhor projeto da minha escola, Sapiens Machina",
     "projContent":
-                "Quando eu estava no segundo ano do ensino médio, no primeiro ano de isolamento social a escola teve problemas para atingir alguns alunos, principalmente os do interior que não têm acesso à internet, então nossa equipe elaborou um modem http para fornecer as aulas e pegar suas anotações.",
-    "philosophyTitle":
-                "Minha filosofia de vida diária",
-    "philosophyContent":
-                "“A própria luta pelas alturas é suficiente para encher o coração de um homem. Deve-se imaginar Sísifo feliz “",
+                "Quando eu estava no segundo ano do ensino médio, no primeiro ano de isolamento social, a escola teve problemas para atingir alguns alunos, principalmente os do interior que não têm acesso à internet, então nossa equipe elaborou um modem http para fornecer as aulas e pegar suas anotações.",
     },
     "Español":
     {/*----
     Resume
     ----*/
+    "portfolio":
+        "Portfolio",
+    "resume":
+        "Currículum",
+    "contact":
+        "Contáctame",
     "pageTitleInHeader":
          "Hola. <br> Soy Ryan. <br> Desarrollador de front-end",
      "pageTitleContent":
@@ -166,11 +184,15 @@ const data =
     "meTitle":
                 "Quien soy",
     "meContent":
-                "Soy Ryan Rodrigo Costa, estudiante de ingeniería de software. Soy una persona animada y motivada que dará mi propia sangre por lo que creo. En mis descansos estudio, leo, juego con mi esposa y codifico mucho",
+                "Soy Ryan Rodrigo Costa, estudiante de ingeniería de software. Soy una persona vivaz motivada que da su sangre a lo que cree. Me encanta solucionar problemas, por lo que los termino sabiendo cada vez más, siempre llegando a un código limpio. Me encanta aprender, para mí el conocimiento nunca es suficiente. Y me gusta trabajar en equipo, siempre hay alguien con quien dar buenas ideas y ser sincero en el equipo.",
     "acFormationTitle":
                 "Formación Académica.",
     "acFormationContent":
                 "Estoy cursando Software Engeneer en Uninter. Uno de los cursos más completos sobre tecnología, 4 años, desde lo básico de planificación de proyectos hasta aplicaciones reales.",
+    "techFormationTitle":
+                "Educación técnica",
+    "techormationContent":
+                "¡Me gradué de Front End por Alura, 170 horas y 18 cursos! Pasé de lo básico, como HTML y CSS, a Animaciones Javascript y SEO.",
     "mySchool":
                 "Conoce a mi escuela",
     "coursesTitle":
@@ -178,20 +200,22 @@ const data =
     "objectiveTitle":
                 "Objetivos",
     "objectiveContent":
-                "Mi principal objetivo es trabajar con mi amor, la tecnología. Elegí esta área porque, primero, es un placer trabajar para mí y, segundo, tiene el mercado laboral más caliente. Siendo la tecnología la aplicación del conocimiento científico con fines prácticos, se puede usar para ayudar a personas de todo el mundo, para conectar a todos de una manera sencilla. Para mí es alucinante cómo los circuitos electrónicos pueden hacer que el matrimonio de la virgen hecha por Raphael Sanzio en una pantalla ",
+                "Mi principal objetivo es trabajar con lo que amo, la tecnología. Elegí esta área porque es un placer trabajar con ella, me encanta construir y reconstruir los problemas en mi mente y encontrar la mejor manera de hacerlo. Siendo la tecnología la aplicación del conocimiento científico con fines prácticos, se puede utilizar para ayudar a personas de todo el mundo de una manera sencilla. Para mí es alucinante cómo los circuitos electrónicos se pueden utilizar como plataforma de aprendizaje y muchas otras formas de hacernos la vida más fácil.",
     "projTitle":
                 "Mi mejor proyecto universitario, Sapiens Machina",
     "projContent":
                 "Cuando era apenas un estudiante de segundo año en la secundaria, en el primer año de aislamiento social la escuela tuvo problemas para lograr algunos estudiantes, principalmente los estudiantes del campo que no tienen acceso a internet, por lo que nuestro equipo elaboró ​​un módem http para brindar las clases y obtener sus notas. ",
-    "philosophyTitle":
-                "Mi filosofía de vida diaria",
-    "philosophyContent":
-                "“La lucha misma hacia las alturas es suficiente para llenar el corazón de un hombre. Hay que imaginarse feliz a Sísifo”",
             },
     "Italiano":
     {/*----
     Resume
     ----*/
+    "portfolio":
+        "Portfolio",
+    "resume":
+        "Curriculum",
+    "contact":
+        "Contattami",
     "pageTitleInHeader":
          "Ehi.<br>Io sono Ryan.<br>Sviluppatore front-end.",
      "pageTitleContent":
@@ -207,22 +231,84 @@ const data =
     "acFormationTitle":
                 "Formazione accademica.",
     "acFormationContent":
-                "Sto frequentando Software Engeneer in Uninter. Uno dei corsi più completi sulla tecnologia, 4 anni, dalle basi della pianificazione dei progetti alle applicazioni reali.",
+                "Sono Ryan Rodrigo Costa, studente di ingegneria del software. Sono una persona vivace e motivata che dona il proprio sangue a ciò che crede. Amo risolvere i problemi, per il motivo che li finisco sapendo ogni volta di più, raggiungendo sempre un codice pulito. Amo imparare, per me la conoscenza non è mai abbastanza. E mi piace lavorare in squadra, c'è sempre qualcuno che dà buone idee ed è sincero nella squadra.",
     "mySchool":
                 "Incontra la mia scuola",
+    "techFormationTitle":
+                "Educazione tecnica",
+    "techormationContent":
+                "Sono laureato al Front End di Alura, 170 ore e 18 corsi! Sono passato dalle basi, come HTML e CSS, alle animazioni Javascript e al SEO.",
     "coursesTitle":
                 "Corsi extracurriculari",
     "objectiveTitle":
                 "Obiettivi",
     "objectiveContent":
-                 "Il mio obiettivo principale è lavorare con il mio amore, la tecnologia. Ho scelto quest'area perché, in primo luogo, è un piacere lavorare per me e, in secondo luogo, ha il mercato del lavoro più caldo. Essendo la tecnologia l'applicazione della conoscenza scientifica per scopi pratici, è può essere usato per aiutare le persone in tutto il mondo, per connettere tutti in modo semplice. Per me è strabiliante come i circuiti elettronici possano realizzare in uno schermo il matrimonio della vergine realizzato da Raffaello Sanzio",
+                 "Il mio obiettivo principale è lavorare con ciò che amo, la tecnologia. Ho scelto quest'area perché è un piacere lavorarci, amo costruire e ricostruire i problemi nella mia mente e trovare il modo migliore per farlo. Essendo la tecnologia l'applicazione della conoscenza scientifica per scopi pratici, può essere utilizzata per aiutare le persone in tutto il mondo in modo semplice. Per me è sbalorditivo come i circuiti elettronici possano essere usati come piattaforma di apprendimento e molti altri modi per semplificarci la vita.",
     "projTitle":
                 "Il mio miglior progetto universitario, Sapiens Machina",
     "projContent":
-                "Quando ero solo al secondo anno del liceo, nel primo anno di isolamento sociale la scuola ha avuto problemi a raggiungere alcuni studenti, principalmente gli studenti di campagna che non hanno accesso a Internet, quindi il nostro team ha elaborato un modem http per fornire le classi e ottenere le loro note.",
-    "philosophyTitle":
-                "La mia filosofia di vita quotidiana",
-    "philosophyContent":
-                "“La stessa lotta verso le vette è sufficiente per riempire il cuore di un uomo. Bisogna immaginare Sisifo felice“",
-    }    
+                "Quando ero solo al secondo anno del liceo, nel primo anno di isolamento sociale la scuola ha avuto problemi a raggiungere alcuni studenti, principalmente gli studenti di campagna che non hanno accesso a Internet, quindi il nostro team ha elaborato un modem http per fornire le classi e ottenere le loro note.",   
+    }   
+}
+//The specific content of my courses
+const dataCourses =
+    {'English':[ 
+           "<li>Database, MySQL - Curso em Vídeo ✓</li>",
+           "<li>HTML5 and CSS3, module I and II - Curso em Vídeo ✓</li>",
+           "<li>Javascript - Curso em Vídeo ✓</li>",
+           "<li>Introduction to Responsive Web Design - Free Code Camp ✓</li>",
+           "<li>Git and GitHub -Teacher José de Assis ✓</li>",
+           "<li>Python POO - Boson Training School✓</li><li>Topics in Algebra - Equaciona ✓</li>",
+           "<li>BootStrap - From beginner to expert - Udemy ✓</li>",
+           "<li>Alura – React: Learning how the library works ✓</li>",
+           "<li>Alura – Computer Networking: Introduction, concepts and practice ✓</li>",
+           "<li>Alura – Rest with NodeJS: API with Express and MySQL – attending</li>",
+           "<li>Equaciona – Calculus – attending</li>",
+    ],
+    "Português":
+    [
+        "<li> Python, Módulos I, II e III - Curso em Vídeo ✓ </li>",
+        "<li>Banco de dados, MySQL - Curso em vídeo ✓ </li>",
+        "<li>HTML5 e CSS3, módulo I e II - Curso em vídeo ✓ </li>",
+        "<li>Javascript - Curso em vídeo ✓ </li>",
+        "<li>Introdução ao design responsivo da Web - FreeCodeCamp ✓ </li>",
+        "<li>Git e GitHub - Professor José de Assis ✓ </li>",
+        "<li> Python POO - Boson Training School✓ </li>",
+        "<li> Tópicos em Álgebra - Equaciona ✓</li>",
+        "<li>BootStrap - De iniciante a especialista - Udemy ✓ </li>",
+        "<li> Alura - React: Aprendendo como a biblioteca funciona ✓ </li>",
+        "<li> Alura - Redes de Computadores: Introdução, conceitos e prática ✓ </li>",
+        "<li> Alura - Rest com NodeJS: API com Express e MySQL - cursando </li>",
+        "<li> Equaciona - Cálculo - cursando </li>",
+ ],
+ "Español":
+ [
+    "<li> Base de datos, MySQL - Curso en video ✓ </li>",
+    "<li> HTML5 y CSS3, módulo I y II - Curso en video ✓ </li>",
+    "<li> Javascript - Curso en video ✓ </li>",
+    "<li> Introducción al diseño web adaptable - FreeCodeCamp ✓ </li>",
+    "<li> Git y GitHub -Teacher José de Assis ✓ </li>",
+    "<li> Python POO - Boson Training School✓ </li>",
+    "<li> Temas en Álgebra - Equaciona ✓ </li>",
+    "<li> BootStrap - De principiante a experto - Udemy ✓ </li>",
+    "<li> Alura - React: Aprender cómo funciona la biblioteca ✓ </li>",
+    "<li> Alura - Redes de computadoras: Introducción, conceptos y práctica ✓ </li>",
+    "<li> Alura - Rest con NodeJS: API con Express y MySQL - estudiando </li>",
+    "<li> Equaciona - Cálculo - estudiando </li>",
+],
+"Italiano":
+[
+    "<li>Python, Modulo I, II e III - Videocorso ✓</li>",
+    "<li>Database, MySQL - Videocorso ✓</li>",
+    "<li>HTML5 e CSS3, modulo I e II - Videocorso ✓</li>",
+    "<li>Javascript - Videocorso ✓</li>",
+    "<li>Introduzione al Responsive Web Design - *Gratuito*CodeCamp ✓</li>",
+    "<li>Git e GitHub -Insegnante José de Assis ✓</li><li>Python POO - Boson Training School ✓</li>",
+    "<li>Argomenti di Algebra - Equaciona ✓</li>",
+    "<li>BootStrap - Dal principiante all'esperto - Udemy ✓</li>",
+    "<li>Alura – React: imparare come funziona la biblioteca ✓</li>",
+    "<li>Alura – Reti informatiche: introduzione, concetti e pratica ✓</li>",
+    "<li>Alura – Rest con NodeJS: API con Express e MySQL – studiando</li>",
+    "<li>Equaciona – Calcolo – studiando</li>"
+]
 }

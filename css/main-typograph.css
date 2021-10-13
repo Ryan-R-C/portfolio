@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+h1, h2, h3{
+    color: var(--almost-black);
+    text-align: center;
+}
+h1{
+    font-size: 2.8rem;
+    text-align: center;
+    margin-block-start: 0;
+}
+
+h1, h2{
+    color:var(--almost-black)
+}
+
+p{
+    margin-top: 0;
+    color: var(--almost-black);
+}
+a{
+    color: var(--csscolor);
+    text-decoration: none;
+}
+
+span{
+    font-weight: bolder;
+    color: var(--almost-black);
+}

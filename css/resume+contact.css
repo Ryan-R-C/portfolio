@@ -11,7 +11,7 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 0.7rem;
-    box-shadow: 10px 2px 2px rgba(0, 0, 0, 0.226);
+    box-shadow: -1px 1px 5px 9px  var(--shadow-color);
 }
 .container-flex{
     display: flex;
@@ -101,13 +101,12 @@ aside{
 
 @media (max-width: 720px){
     .container-flex{
-        display: block;
-        }
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 90%;
+    }
     #main-resume, #aside{
         width: 100%;
-    }
-    .container-flex{
-        flex-direction: row;
     }
     .article-recent-secondary{
         order: 1;

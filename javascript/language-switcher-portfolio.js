@@ -108,7 +108,7 @@ const data =
     "PPTitle":
                 "Página de produto",
     "PPContent":
-                "Fiz uma página de produto peguei como exemplo meu PlayStation, meu console favorito. É totalmente responsivo, com o famoso menu hamburguer.",
+                "Fiz uma página de produto, por exemplo fiz um do meu PlayStation, meu console favorito. Um ótimo exemplo de uma boa IU. E neste projeto foi utilizado o posicionamento relativo e absoluto com flexbox. É totalmente responsivo.",
                 "BTSTile":
                 "Bootstrap, Prestação de Serviços",
     "BTSContent":

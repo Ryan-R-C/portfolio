@@ -13,6 +13,7 @@ const BTSTile = document.querySelector("#BTSTile")
 const BTSContent = document.querySelector("#BTSContent")
 const firstClientTitle = document.querySelector("#firstClientTitle")
 const firstClientContent = document.querySelector("#firstClientContent")
+const pokedevContent = document.querySelector("#pokedevContent")
 
 link.forEach(element => {
     element.addEventListener('click', () => {
@@ -52,6 +53,9 @@ link.forEach(element => {
         firstClientTitle.textContent = data[attributeLang].firstClientTitle        
 
         firstClientContent.textContent = data[attributeLang].firstClientContent
+
+        pokedevContent.textContent = data[attributeLang].pokedevContent
+
         
     })
 });
@@ -85,7 +89,10 @@ const data =
     "firstClientTitle":
                 "My First Client",
     "firstClientContent":
-                "This barbershop was my first client. I did the interface design and created all HTML and CSS, always having in mind the visual identity of the client. In a nutshell it was a mobile first using just HTML5, CSS3 and JavaScript, made to show my skills working with fundamental tools."
+                "This barbershop was my first client. I did the interface design and created all HTML and CSS, always having in mind the visual identity of the client. In a nutshell it was a mobile first using just HTML5, CSS3 and JavaScript, made to show my skills working with fundamental tools.",
+    "pokedevContent":
+                "A web page that consumes data from a external API, pokeAPI, and show specif data from the pokémon in the screen. A good example of clean code and AJAX + DOM management, all the code is comment."
+
     },
     "Português":
     {"portfolio":
@@ -116,7 +123,9 @@ const data =
                 "firstClientTitle":
                 "Meu primeiro cliente",
     "firstClientContent":
-                "Essa barbearia foi meu primeiro cliente. Fiz o design da interface e criei todo HTML e CSS, sempre tendo em mente a identidade visual do cliente. Resumindo foi um mobile primeiro usando apenas HTML5, CSS3 e JavaScript, feito para mostrar minhas habilidades trabalhando com ferramentas fundamentais."       
+                "Essa barbearia foi meu primeiro cliente. Fiz o design da interface e criei todo HTML e CSS, sempre tendo em mente a identidade visual do cliente. Resumindo foi um mobile primeiro usando apenas HTML5, CSS3 e JavaScript, feito para mostrar minhas habilidades trabalhando com ferramentas fundamentais.",
+    "pokedevContent":
+                "Uma página da web que consome dados de uma API externa, pokeAPI, e mostra dados específicos do pokémon na tela. Um bom exemplo de código limpo e gerenciamento AJAX + DOM, todo o código é comentário."       
             },
     "Español":
     {"portfolio":
@@ -147,7 +156,9 @@ const data =
     "firstClientTitle":
                 "Mi primer cliente",
     "firstClientContent":
-                "Esta barbería fue mi primer cliente. Hice el diseño de la interfaz y creé todo el HTML y CSS, siempre teniendo en cuenta la identidad visual del cliente. En pocas palabras, fue un dispositivo móvil primero usando solo HTML5, CSS3 y JavaScript, hecho para mostrar mis habilidades trabajando con herramientas fundamentales."
+                "Esta barbería fue mi primer cliente. Hice el diseño de la interfaz y creé todo el HTML y CSS, siempre teniendo en cuenta la identidad visual del cliente. En pocas palabras, fue un dispositivo móvil primero usando solo HTML5, CSS3 y JavaScript, hecho para mostrar mis habilidades trabajando con herramientas fundamentales.",
+    "pokedevContent":
+                "Una página web que consume datos de una API externa, pokeAPI, y muestra datos específicos del pokémon en la pantalla. Un buen ejemplo de código limpio y gestión AJAX + DOM, todo el código es comentario."
     },
     "Italiano":
     {"portfolio":
@@ -177,6 +188,8 @@ const data =
     "firstClientTitle":
                 "Il mio primo cliente",
     "firstClientContent":
-                "Questo negozio di barbiere è stato il mio primo cliente. Ho realizzato il design dell'interfaccia e ho creato tutto HTML e CSS, tenendo sempre presente l'identità visiva del cliente. In poche parole è stato un mobile first utilizzando solo HTML5, CSS3 e JavaScript, fatto per mostrare le mie capacità di lavorare con strumenti fondamentali."
+                "Questo negozio di barbiere è stato il mio primo cliente. Ho realizzato il design dell'interfaccia e ho creato tutto HTML e CSS, tenendo sempre presente l'identità visiva del cliente. In poche parole è stato un mobile first utilizzando solo HTML5, CSS3 e JavaScript, fatto per mostrare le mie capacità di lavorare con strumenti fondamentali.",
+    "pokedevContent":
+                "Una pagina web che consuma dati da un'API esterna, pokeAPI, e mostra i dati specifici del pokémon sullo schermo. Un buon esempio di codice pulito e gestione AJAX + DOM, tutto il codice è commento."
             }    
 }

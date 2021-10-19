@@ -17,7 +17,7 @@ body{
     display: flex;
     border: .1px solid var(--almost-black);
     border-radius: 5px;
-    box-shadow: -1px 1px 5px 5px #01111322;
+    box-shadow: -1px 1px 5px 5px var(--light-shadow);
     background-color: var(--custom-white);
     width: 45%;
     margin-bottom: 1rem;

@@ -1,0 +1,16 @@
+
+.filter{
+    margin: 1rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filter__proj{
+    margin: 1rem auto;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: var(--dontchange-white);
+    padding: .5rem;
+    font-size: 1.3rem;
+}

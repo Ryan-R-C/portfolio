@@ -14,6 +14,9 @@ const BTSContent = document.querySelector("#BTSContent")
 const firstClientTitle = document.querySelector("#firstClientTitle")
 const firstClientContent = document.querySelector("#firstClientContent")
 const pokedevContent = document.querySelector("#pokedevContent")
+const reactNoteTitle = document.querySelector("#reactNoteTitle")
+const reactNoteContent = document.querySelector("#reactNoteContent")
+
 
 link.forEach(element => {
     element.addEventListener('click', () => {
@@ -56,6 +59,10 @@ link.forEach(element => {
 
         pokedevContent.textContent = data[attributeLang].pokedevContent
 
+        reactNoteTitle.textContent = data[attributeLang].reactNoteTitle
+        reactNoteContent.textContent = data[attributeLang].reactNoteContent
+
+
         
     })
 });
@@ -91,7 +98,11 @@ const data =
     "firstClientContent":
                 "This barbershop was my first client. I did the interface design and created all HTML and CSS, always having in mind the visual identity of the client. In a nutshell it was a mobile first using just HTML5, CSS3 and JavaScript, made to show my skills working with fundamental tools.",
     "pokedevContent":
-                "A web page that consumes data from a external API, pokeAPI, and show specif data from the pokémon in the screen. A good example of clean code and AJAX + DOM management, all the code is comment."
+                "A web page that consumes data from a external API, pokeAPI, and show specif data from the pokémon in the screen. A good example of clean code and AJAX + DOM management, all the code is comment.",
+    "reactNoteTitle":
+                "React Note Manager",
+    "reactNoteContent":
+                "A react app note manager, saves the last user's note in the localStorage and handle dates. Not only consumes 2 API's: localStorage, browsers API, and Moment.js, external API, but use React too, facebook JavaScript library."
 
     },
     "Português":
@@ -125,7 +136,11 @@ const data =
     "firstClientContent":
                 "Essa barbearia foi meu primeiro cliente. Fiz o design da interface e criei todo HTML e CSS, sempre tendo em mente a identidade visual do cliente. Resumindo foi um mobile primeiro usando apenas HTML5, CSS3 e JavaScript, feito para mostrar minhas habilidades trabalhando com ferramentas fundamentais.",
     "pokedevContent":
-                "Uma página da web que consome dados de uma API externa, pokeAPI, e mostra dados específicos do pokémon na tela. Um bom exemplo de código limpo e gerenciamento AJAX + DOM, todo o código é comentário."       
+                "Uma página da web que consome dados de uma API externa, pokeAPI, e mostra dados específicos do pokémon na tela. Um bom exemplo de código limpo e gerenciamento AJAX + DOM, todo o código é comentário.",
+     "reactNoteTitle":
+                 "Gerenciador de notas, React",
+     "reactNoteContent":
+                 "Um gerenciador de notas react app salva a nota do último usuário no localStorage e manipula as datas. Não só consome 2 APIs: localStorage, browsers API e Moment.js, API externa, como também também usa React, biblioteca JavaScript do Facebook"       
             },
     "Español":
     {"portfolio":
@@ -158,7 +173,11 @@ const data =
     "firstClientContent":
                 "Esta barbería fue mi primer cliente. Hice el diseño de la interfaz y creé todo el HTML y CSS, siempre teniendo en cuenta la identidad visual del cliente. En pocas palabras, fue un dispositivo móvil primero usando solo HTML5, CSS3 y JavaScript, hecho para mostrar mis habilidades trabajando con herramientas fundamentales.",
     "pokedevContent":
-                "Una página web que consume datos de una API externa, pokeAPI, y muestra datos específicos del pokémon en la pantalla. Un buen ejemplo de código limpio y gestión AJAX + DOM, todo el código es comentario."
+                "Una página web que consume datos de una API externa, pokeAPI, y muestra datos específicos del pokémon en la pantalla. Un buen ejemplo de código limpio y gestión AJAX + DOM, todo el código es comentario.",
+     "reactNoteTitle":
+                 "Administrador de notas, React",
+     "reactNoteContent":
+                 "Un administrador de notas de la aplicación de reacción, guarda la última nota del usuario en localStorage y maneja las fechas. No solo consume 2 API: localStorage, API de navegadores y Moment.js, API externa, sino que usa React también, biblioteca de JavaScript de Facebook."
     },
     "Italiano":
     {"portfolio":
@@ -190,6 +209,10 @@ const data =
     "firstClientContent":
                 "Questo negozio di barbiere è stato il mio primo cliente. Ho realizzato il design dell'interfaccia e ho creato tutto HTML e CSS, tenendo sempre presente l'identità visiva del cliente. In poche parole è stato un mobile first utilizzando solo HTML5, CSS3 e JavaScript, fatto per mostrare le mie capacità di lavorare con strumenti fondamentali.",
     "pokedevContent":
-                "Una pagina web che consuma dati da un'API esterna, pokeAPI, e mostra i dati specifici del pokémon sullo schermo. Un buon esempio di codice pulito e gestione AJAX + DOM, tutto il codice è commento."
+                "Una pagina web che consuma dati da un'API esterna, pokeAPI, e mostra i dati specifici del pokémon sullo schermo. Un buon esempio di codice pulito e gestione AJAX + DOM, tutto il codice è commento.",
+     "reactNoteTitle":
+                 "Gestione note, React",
+     "reactNoteContent":
+                 "Un gestore di note dell'app React, salva l'ultima nota dell'utente in localStorage e gestisce le date. Non solo consuma 2 API: localStorage, API del browser e Moment.js, API esterna, ma usa anche React, libreria JavaScript di Facebook."
             }    
 }

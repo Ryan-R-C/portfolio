@@ -12,12 +12,13 @@
     margin: 0 auto;
     padding: 0.7rem;
     box-shadow: -1px 1px 5px 9px  var(--shadow-color);
+    background-color: var(--custom-white);
 }
+
 .container-flex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--custom-white);
     padding: 3.5rem;
 
 }

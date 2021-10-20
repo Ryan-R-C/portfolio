@@ -2,7 +2,7 @@ const filter = () => {
     
     const filter = document.querySelector(".filter")
     
-    const projs = document.querySelectorAll(".filter__proj")
+    const projsFilters = document.querySelectorAll(".filter__proj")
     
     const siteProj  = document.querySelectorAll(".proj--sites")
     const jsProj    = document.querySelectorAll(".proj--js")
@@ -10,9 +10,17 @@ const filter = () => {
     
     
     
-    projs.forEach(element => {
+    projsFilters.forEach(element => {
         element.addEventListener('click', ()=>{
             const filterInScrean = element.getAttribute('filter')
+            
+            filterActiveStyle = 'filter__proj--active'
+
+            projsFilters.forEach(projFilter => {
+                projFilter.classList.remove(filterActiveStyle)
+            })
+
+            element.classList.add(filterActiveStyle)
             
             siteProj.forEach(disappear => {
 

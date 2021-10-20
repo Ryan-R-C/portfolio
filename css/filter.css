@@ -6,7 +6,7 @@
 .filter__proj{
     margin: 1rem auto;
     background-color: var(--custom-gray);
-    color: var(--dontchange-white);
+    color: var(--custom-white);
     padding: .5rem;
     font-size: 1.3rem;
 }

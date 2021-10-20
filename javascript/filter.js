@@ -1,9 +1,8 @@
-const filter = () => {
-    
-    const filter = document.querySelector(".filter")
-    
+const filter = () => {    
     const projsFilters = document.querySelectorAll(".filter__proj")
-    
+
+    const elementsToBeFiltered = document.querySelectorAll(".grid__section")
+
     const siteProj  = document.querySelectorAll(".proj--sites")
     const jsProj    = document.querySelectorAll(".proj--js")
     const reactProj = document.querySelectorAll(".proj--react")
@@ -23,7 +22,7 @@ const filter = () => {
             element.classList.add(filterActiveStyle)
             
             siteProj.forEach(disappear => {
-
+            
                 if ( String(siteProj[0].className).includes(filterInScrean) ){
                     disappear.style.display  = 'flex'
                 } 
@@ -50,6 +49,12 @@ const filter = () => {
                 }
             })
             
+            if(filterInScrean == 'proj--all'){
+                elementsToBeFiltered.forEach(element => {
+                    element.style.display = 'flex'
+                })
+            }
+
 
         })
     })

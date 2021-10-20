@@ -3,6 +3,7 @@
 Portfolio content
 ---------------*/
 const title = document.querySelector("#title")
+const filterAll = document.querySelector("#filterAll")
 const PWTitle = document.querySelector("#PWTitle")
 const PWContent = document.querySelector("#PWContent")
 const PPTitle = document.querySelector("#PPTitle")
@@ -36,6 +37,8 @@ link.forEach(element => {
 
 
         title.textContent = data[attributeLang].title
+
+        filterAll.textContent = data[attributeLang].filterAll
 
         PWTitle.textContent = data[attributeLang].PWTitle
 
@@ -77,6 +80,8 @@ const data =
         "Contact me",
     "title":
                 "My projects",
+    "filterAll":
+                "All",
 	"PWTitle":
                 "Pillars of Websites",
 	"PWContent":
@@ -117,6 +122,8 @@ const data =
                 "Meus projetos",
     "PWTitle":
                 "Pilares dos Websites",
+     "filterAll":
+                 "Tudo",
     "PWContent":
                 "Este projeto foi basicamente um tutorial de HTML, CSS e JavaScript para iniciantes. Meu primeiro projeto usando flexbox, uma boa propriedade css que permite trabalhar com o posicionamento e a ordem dos elementos. Página responsiva estática simples.",
     "readMore":
@@ -152,6 +159,8 @@ const data =
 
     "title":
                 "Mis proyectos",
+    "filterAll":
+                "Todos",
     "PWTitle":
                 "Pilares de los sitios web",
     "PWContent":
@@ -188,6 +197,8 @@ const data =
         "Contattami",
     "title":
                 "I miei progetti",
+    "filterAll":
+                 "Tutto",
     "PWTitle":
                 "Pilastri dei siti web",
     "PWContent":

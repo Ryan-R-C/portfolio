@@ -13,7 +13,6 @@ const filter = () => {
     projs.forEach(element => {
         element.addEventListener('click', ()=>{
             const filterInScrean = element.getAttribute('filter')
-
             
             siteProj.forEach(disappear => {
 

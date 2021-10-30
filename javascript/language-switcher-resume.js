@@ -255,7 +255,6 @@ const dataCourses =
     {'English':[
             "<li>ReactJs I - Alura ✓</li>",
             "<li>ReactNative I - Alura ✓</li>",
-            "<li>NodeJs with Express: Creating a RestAPI - Alura ✓</li>",
            "<li>Database, MySQL - Curso em Vídeo ✓</li>",
            "<li>HTML5 and CSS3, module I and II - Curso em Vídeo ✓</li>",
            "<li>Javascript - Curso em Vídeo ✓</li>",
@@ -271,7 +270,6 @@ const dataCourses =
     "Português":
 [       "<li>ReactJs I - Alura ✓</li>",
         "<li>ReactNative I - Alura ✓</li>",
-        "<li>NodeJs with Express: Creating a RestAPI - Alura ✓</li>",
         "<li> Python, Módulos I, II e III - Curso em Vídeo ✓ </li>",
         "<li>Banco de dados, MySQL - Curso em vídeo ✓ </li>",
         "<li>HTML5 e CSS3, módulo I e II - Curso em vídeo ✓ </li>",
@@ -290,7 +288,6 @@ const dataCourses =
  [
     "<li>ReactJs I - Alura ✓</li>",
     "<li>ReactNative I - Alura ✓</li>",
-    "<li>NodeJs with Express: Creating a RestAPI - Alura ✓</li>",
     "<li> Base de datos, MySQL - Curso en video ✓ </li>",
     "<li> HTML5 y CSS3, módulo I y II - Curso en video ✓ </li>",
     "<li> Javascript - Curso en video ✓ </li>",
@@ -308,7 +305,6 @@ const dataCourses =
 [
     "<li>ReactJs I - Alura ✓</li>",
     "<li>ReactNative I - Alura ✓</li>",
-    "<li>NodeJs with Express: Creating a RestAPI - Alura ✓</li>",
     "<li>Python, Modulo I, II e III - Videocorso ✓</li>",
     "<li>Database, MySQL - Videocorso ✓</li>",
     "<li>HTML5 e CSS3, modulo I e II - Videocorso ✓</li>",

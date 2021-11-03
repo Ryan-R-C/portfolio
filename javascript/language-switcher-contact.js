@@ -22,7 +22,8 @@ link.forEach(element => {
         
         selectedLang.textContent = `${attributeLang}`
 
-        selectFlag.src = `https://www.countryflags.io/${attributeId}/flat/32.png`
+        selectFlag.src = `./img/${attributeId}.png`
+
 
         portfolio.textContent = data[attributeLang].portfolio
         resume.textContent = data[attributeLang].resume

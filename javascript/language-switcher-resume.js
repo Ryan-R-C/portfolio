@@ -36,7 +36,9 @@ link.forEach(element => {
         courses.innerHTML = dataCourses[attributeLang].join(' ')//Add all content in specific language in courses
 
         selectedLang.textContent = `${attributeLang}`
-        selectFlag.src = `https://www.countryflags.io/${attributeId}/flat/32.png`
+
+        selectFlag.src = `./img/${attributeId}.png`
+
         /*--------------
         Resume Atributes
         --------------*/

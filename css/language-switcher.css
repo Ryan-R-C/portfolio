@@ -62,18 +62,22 @@ Starts the language switcher
     width: 32px;
 }
 #us:before{
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background: url('../img/us.png') no-repeat center;
+    background-size: contain;
     
 }
 #br:before{
-    background-image: url(https://www.countryflags.io/br/flat/32.png);
+    background: url('../img/br.png') no-repeat center;
+    background-size: contain;
 
 }
 #es:before{
-    background-image: url(https://www.countryflags.io/es/flat/32.png);    
+    background: url('../img/es.png') no-repeat center;
+    background-size: contain;    
 }
 #it:before{
-    background-image: url(https://www.countryflags.io/it/flat/32.png);
+    background: url('../img/it.png') no-repeat center;
+    background-size: contain;
 
 }
     /*---------------------

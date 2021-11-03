@@ -29,7 +29,7 @@
     width: 55%;
     object-fit: contain;
     min-width: 496.094px;
-    min-height: 457px;
+    min-height: 500px;
 }
 #separator{
     background-color: var(--custom-dark);

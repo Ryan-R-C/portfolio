@@ -17,7 +17,8 @@ const firstClientContent = document.querySelector("#firstClientContent")
 const pokedevContent = document.querySelector("#pokedevContent")
 const reactNoteTitle = document.querySelector("#reactNoteTitle")
 const reactNoteContent = document.querySelector("#reactNoteContent")
-
+const freelaTitle = document.querySelector("freelaTitle")
+const freelaContent = document.querySelector("freelaContent")
 
 link.forEach(element => {
     element.addEventListener('click', () => {

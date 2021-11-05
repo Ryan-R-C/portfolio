@@ -150,7 +150,9 @@ const data =
      "reactNoteTitle":
                  "Gerenciador de notas, React",
      "reactNoteContent":
-                 "Um gerenciador de notas react app salva a nota do último usuário no localStorage e manipula as datas. Não só consome 2 APIs: localStorage, browsers API e Moment.js, API externa, como também também usa React, biblioteca JavaScript do Facebook"       
+                 "Um gerenciador de notas react app salva a nota do último usuário no localStorage e manipula as datas. Não só consome 2 APIs: localStorage, browsers API e Moment.js, API externa, como também também usa React, biblioteca JavaScript do Facebook",
+    "freelaContent":
+                 "Essa é minha página freelancer, neste projeto não só mostro minhas habilidades como Front End Dev usando JavaScript e animação CSS para fazer um site quase ao vivo, mas também um design de alto nível. Tenho muito orgulho deste repositório."    
             },
     "Español":
     {"portfolio":

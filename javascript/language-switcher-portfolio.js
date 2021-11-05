@@ -17,7 +17,6 @@ const firstClientContent = document.querySelector("#firstClientContent")
 const pokedevContent = document.querySelector("#pokedevContent")
 const reactNoteTitle = document.querySelector("#reactNoteTitle")
 const reactNoteContent = document.querySelector("#reactNoteContent")
-const freelaTitle = document.querySelector("freelaTitle")
 const freelaContent = document.querySelector("freelaContent")
 
 link.forEach(element => {
@@ -67,7 +66,7 @@ link.forEach(element => {
         reactNoteTitle.textContent = data[attributeLang].reactNoteTitle
         reactNoteContent.textContent = data[attributeLang].reactNoteContent
 
-
+        freelaContent.textContent = data[attributeLang].freelaContent
         
     })
 });
@@ -109,8 +108,10 @@ const data =
     "reactNoteTitle":
                 "React Note Manager",
     "reactNoteContent":
-                "A react app note manager, saves the last user's note in the localStorage and handle dates. Not only consumes 2 API's: localStorage, browsers API, and Moment.js, external API, but use React too, facebook JavaScript library."
+                "A react app note manager, saves the last user's note in the localStorage and handle dates. Not only consumes 2 API's: localStorage, browsers API, and Moment.js, external API, but use React too, facebook JavaScript library.",
 
+    "freelaContent":
+                "That is my freelancer webpage, In this project not only I show my skills as Front End Dev using JavaScript and CSS animation to make a almost live site, but also a high level design. I am very pround of this repository."
     },
     "Português":
     {"portfolio":

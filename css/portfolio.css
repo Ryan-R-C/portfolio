@@ -9,9 +9,8 @@ body{
 }
 .grid{
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-flow: wrap-reverse;
 }
 .grid__section{
     display: flex;

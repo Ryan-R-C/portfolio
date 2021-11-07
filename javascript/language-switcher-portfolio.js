@@ -18,6 +18,9 @@ const pokedevContent = document.querySelector("#pokedevContent")
 const reactNoteTitle = document.querySelector("#reactNoteTitle")
 const reactNoteContent = document.querySelector("#reactNoteContent")
 const freelaContent = document.querySelector("#freelaContent")
+const infinityScroolTitle = document.querySelector("#infinityScroolTitle")
+const infinityScroolContent = document.querySelector("#infinityScroolContent")
+
 
 link.forEach(element => {
     element.addEventListener('click', () => {
@@ -68,6 +71,8 @@ link.forEach(element => {
 
         freelaContent.textContent = data[attributeLang].freelaContent
         
+        infinityScroolTitle.textContent = data[attributeLang].infinityScroolTitle 
+        infinityScroolContent.textContent = data[attributeLang].infinityScroolContent 
     })
 });
 const data =

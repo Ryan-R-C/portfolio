@@ -200,7 +200,9 @@ const data =
      "reactNoteContent":
                  "Un administrador de notas de la aplicación de reacción, guarda la última nota del usuario en localStorage y maneja las fechas. No solo consume 2 API: localStorage, API de navegadores y Moment.js, API externa, sino que usa React también, biblioteca de JavaScript de Facebook.",
     "freelaContent":
-                 "Esa es mi página web para autónomos. En este proyecto, no solo demuestro mis habilidades como Front End Dev usando JavaScript y animación CSS para hacer un sitio casi en vivo, sino también un diseño de alto nivel. Estoy muy orgulloso de este repositorio."
+                 "Esa es mi página web para autónomos. En este proyecto, no solo demuestro mis habilidades como Front End Dev usando JavaScript y animación CSS para hacer un sitio casi en vivo, sino también un diseño de alto nivel. Estoy muy orgulloso de este repositorio.",
+    "infinityScrollContent":
+                 "Es un proyecto que consume una API externa, JSONPlaceholder, y las carga a medida que el usuario baja por la página que activa una animación. Y también filtra los datos según lo desee el usuario. Buena interfaz de usuario y código limpio.",
     },
     "Italiano":
     {"portfolio":

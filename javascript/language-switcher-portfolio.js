@@ -242,6 +242,8 @@ const data =
      "reactNoteContent":
                  "Un gestore di note dell'app React, salva l'ultima nota dell'utente in localStorage e gestisce le date. Non solo consuma 2 API: localStorage, API del browser e Moment.js, API esterna, ma usa anche React, libreria JavaScript di Facebook.",
     "freelaContent":
-                 "Questa è la mia pagina web da freelance, in questo progetto non solo mostro le mie abilità come Front End Dev utilizzando JavaScript e l'animazione CSS per creare un sito quasi live, ma anche un design di alto livello. Sono molto orgoglioso di questo repository."
+                 "Questa è la mia pagina web da freelance, in questo progetto non solo mostro le mie abilità come Front End Dev utilizzando JavaScript e l'animazione CSS per creare un sito quasi live, ma anche un design di alto livello. Sono molto orgoglioso di questo repository.",
+    "infinityScrollContent":
+                 "È un progetto che utilizza un'API esterna, JSONPlaceholder, e li carica quando l'utente scende nella pagina che attiva un'animazione. E filtra anche i dati come desidera l'utente. Buona interfaccia utente e codice pulito.",
             }    
 }

@@ -18,8 +18,7 @@ const pokedevContent = document.querySelector("#pokedevContent")
 const reactNoteTitle = document.querySelector("#reactNoteTitle")
 const reactNoteContent = document.querySelector("#reactNoteContent")
 const freelaContent = document.querySelector("#freelaContent")
-const infinityScroolTitle = document.querySelector("#infinityScroolTitle")
-const infinityScroolContent = document.querySelector("#infinityScroolContent")
+const infinityScrollContent = document.querySelector("#infinityScrollContent")
 
 
 link.forEach(element => {
@@ -71,8 +70,7 @@ link.forEach(element => {
 
         freelaContent.textContent = data[attributeLang].freelaContent
         
-        infinityScroolTitle.textContent = data[attributeLang].infinityScroolTitle 
-        infinityScroolContent.textContent = data[attributeLang].infinityScroolContent 
+        infinityScrollContent.textContent = data[attributeLang].infinityScrollContent 
     })
 });
 const data =
@@ -116,7 +114,9 @@ const data =
                 "A react app note manager, saves the last user's note in the localStorage and handle dates. Not only consumes 2 API's: localStorage, browsers API, and Moment.js, external API, but use React too, facebook JavaScript library.",
 
     "freelaContent":
-                "That is my freelancer webpage, In this project not only I show my skills as Front End Dev using JavaScript and CSS animation to make a almost live site, but also a high level design. I am very pround of this repository."
+                "That is my freelancer webpage, In this project not only I show my skills as Front End Dev using JavaScript and CSS animation to make a almost live site, but also a high level design. I am very pround of this repository.",
+    "infinityScrollContent":
+                "It is a project that consumes a external API, JSONPlaceholder, and load them as user goes down the page that triggers an animation. And also filter the data as user wants. Good UI and clean Code.",
     },
     "Português":
     {"portfolio":
@@ -157,7 +157,8 @@ const data =
      "reactNoteContent":
                  "Um gerenciador de notas react app salva a nota do último usuário no localStorage e manipula as datas. Não só consome 2 APIs: localStorage, browsers API e Moment.js, API externa, como também também usa React, biblioteca JavaScript do Facebook",
     "freelaContent":
-                 "Essa é minha página freelancer, neste projeto não só mostro minhas habilidades como Front End Dev usando JavaScript e animação CSS para fazer um site quase ao vivo, mas também um design de alto nível. Tenho muito orgulho deste repositório."    
+                 "Essa é minha página freelancer, neste projeto não só mostro minhas habilidades como Front End Dev usando JavaScript e animação CSS para fazer um site quase ao vivo, mas também um design de alto nível. Tenho muito orgulho deste repositório.",
+
             },
     "Español":
     {"portfolio":

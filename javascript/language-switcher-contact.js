@@ -59,7 +59,7 @@ const data =
     "schedulesTitle": 
         "Schedules available to contact",
     "schedulesContent": 
-        "You can find me in the evening, and all day in the weekend.",
+        "You can find me all day.",
     "socialContent":
         "All social media presented in footer, but I have more affection for Linkedin.",
     "me":
@@ -78,7 +78,7 @@ const data =
     "schedulesTitle":
         "Horários disponíveis para contato",
     "schedulesContent":
-        "Você pode me encontrar à noite e o dia todo no fim de semana.",
+        "Você pode me encontrar o dia todo.",
     "socialContent":
         "Todas as redes sociais apresentadas em rodapé, mas tenho mais carinho pelo Linkedin.",
     "me":
@@ -100,7 +100,7 @@ const data =
     "schedulesTitle":
         "Horarios disponibles para contactar",
     "schedulesContent":
-        "Puedes encontrarme por la noche y todo el día los fines de semana",
+        "Puedes encontrarme todo el día.",
     "socialContent":
         "Todas las redes sociales se presentan en pie de página, pero le tengo más cariño a Linkedin.",
     "me":
@@ -120,7 +120,7 @@ const data =
     "schedulesTitle":
         "Orari disponibili da contattare",
     "schedulesContent":
-        "Mi puoi trovare la sera e tutto il giorno nel fine settimana.",
+        "Puoi trovarmi tutto il giorno.",
     "socialContent":
         "Tutti i social presentati a piè di pagina, ma ho più affetto per Linkedin.",
     "me":

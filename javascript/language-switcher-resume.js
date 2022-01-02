@@ -36,8 +36,9 @@ link.forEach(element => {
         const attributeId = element.getAttribute("id")//The it that will make the flag change
 
         const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
-        document.documentElement.setAttribute("lang", `${HTMLlang}`)
+        
 
+        changeHtmlLang(HTMLlang)
 
         /*--------------
         Resume Atributes
@@ -51,6 +52,10 @@ link.forEach(element => {
         
     })
 });
+
+const changeHtmlLang = ( HTMLlang ) => {
+    document.documentElement.setAttribute("lang", `${HTMLlang}`)
+}
 
 const changeLanguage = (attributeLang) => {
 

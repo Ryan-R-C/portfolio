@@ -7,7 +7,7 @@ const contactContent = document.querySelector("#contactContent")
 const schedulesTitle = document.querySelector("#schedulesTitle")
 const schedulesContent = document.querySelector("#schedulesContent")
 const socialContent = document.querySelector("#socialContent")
-const me = document.querySelector("#me")
+// const me = document.querySelector("#me")
 
 
 
@@ -16,16 +16,23 @@ link.forEach(element => {
         
         const attributeLang = element.getAttribute("Language")
         const attributeId = element.getAttribute("id")
-
-        const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
-        document.documentElement.setAttribute("lang", `${HTMLlang}`)
         
-        selectedLang.textContent = `${attributeLang}`
+        const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
+        localStorage.setItem("selectedLang", attributeId)
 
-        selectFlag.src = `./img/${attributeId}.png`
+        changeHtmlLang(HTMLlang)
+        changeFlag(attributeLang, attributeId)
+        changeLanguage(attributeLang)
 
 
-        portfolio.textContent = data[attributeLang].portfolio
+
+    })
+});
+const changeHtmlLang = ( HTMLlang ) => {
+    document.documentElement.setAttribute("lang", `${HTMLlang}`)
+}
+const changeLanguage = (attributeLang) => {
+    portfolio.textContent = data[attributeLang].portfolio
         resume.textContent = data[attributeLang].resume
         contact.textContent = data[attributeLang].contact
 
@@ -39,10 +46,15 @@ link.forEach(element => {
 
         socialContent.textContent = data[attributeLang].socialContent
 
-        me.textContent = data[attributeLang].me
+        // me.textContent = data[attributeLang].me
+}
 
-    })
-});
+const changeFlag = (attributeLang, attributeId) => {
+    selectedLang.textContent = `${attributeLang}`
+
+    selectFlag.src = `./img/${attributeId}.png`
+}
+
 const data =
 {
 	"English":

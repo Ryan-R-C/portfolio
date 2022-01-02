@@ -28,12 +28,18 @@ link.forEach(element => {
         const attributeId = element.getAttribute("id")
         
         const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
-        document.documentElement.setAttribute("lang", `${HTMLlang}`)
+        localStorage.setItem("selectedLang", attributeId)
 
-        selectedLang.textContent = `${attributeLang}`
-        
-        selectFlag.src = `./img/${attributeId}.png`
+        changeHtmlLang(HTMLlang)
+        changeFlag(attributeLang, attributeId)
+        changeLanguage(attributeLang)
+    })
+});
+const changeHtmlLang = ( HTMLlang ) => {
+    document.documentElement.setAttribute("lang", `${HTMLlang}`)
+}
 
+const changeLanguage = (attributeLang) => {
         portfolio.textContent = data[attributeLang].portfolio
         resume.textContent = data[attributeLang].resume
         contact.textContent = data[attributeLang].contact
@@ -71,8 +77,14 @@ link.forEach(element => {
         freelaContent.textContent = data[attributeLang].freelaContent
         
         infinityScrollContent.textContent = data[attributeLang].infinityScrollContent 
-    })
-});
+}
+
+const changeFlag = (attributeLang, attributeId) => {
+    selectedLang.textContent = `${attributeLang}`
+
+    selectFlag.src = `./img/${attributeId}.png`
+}
+
 const data =
 {
 	"English":

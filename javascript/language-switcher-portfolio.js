@@ -259,3 +259,27 @@ const data =
                  "È un progetto che utilizza un'API esterna, JSONPlaceholder, e li carica quando l'utente scende nella pagina che attiva un'animazione. E filtra anche i dati come desidera l'utente. Buona interfaccia utente e codice pulito.",
             }    
 }
+
+const localStorageLang = localStorage.getItem("selectedLang")
+if(localStorageLang){
+    const element = document.querySelector(`#${localStorageLang}`)
+
+     
+    const attributeLang = element.getAttribute("Language")//It gets the actual language presented on the page
+    const attributeId = element.getAttribute("id")//The it that will make the flag change
+    const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
+    
+    localStorage.setItem("selectedLang", attributeId)
+    console.log(attributeId)
+
+    changeHtmlLang(HTMLlang)
+
+    /*--------------
+    Resume Atributes
+    --------------*/
+
+    changeFlag(attributeLang, attributeId)
+
+    changeLanguage(attributeLang)
+    
+}

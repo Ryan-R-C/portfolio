@@ -22,7 +22,13 @@ const philosophyTitle = document.querySelector("#philosophyTitle")
 const philosophyContent = document.querySelector("#philosophyContent")
 //This is all courses li's
 const courses = document.querySelector("#courses")
+/*
+Como fazer para salvar ele durante o uso do site?
+Salvar é simples, mas usar é outra coisa
 
+
+
+*/
 link.forEach(element => {
     element.addEventListener('click', () => {
         
@@ -43,40 +49,47 @@ link.forEach(element => {
         Resume Atributes
         --------------*/
 
-        portfolio.textContent = data[attributeLang].portfolio
-        resume.textContent = data[attributeLang].resume
-        contact.textContent = data[attributeLang].contact
-
-
-        pageTitleInHeader.innerHTML = data[attributeLang].pageTitleInHeader
-
-        pageTitleContent.innerHTML = data[attributeLang].pageTitleContent
-
-        WhoIm.textContent = data[attributeLang].WhoIm
-        myProj.textContent = data[attributeLang].myProj
-
-        meTitle.textContent = data[attributeLang].meTitle
-        meContent.textContent = data[attributeLang].meContent
-        
-        acFormationTitle.textContent = data[attributeLang].acFormationTitle
-        acFormationContent.textContent = data[attributeLang].acFormationContent
-        mySchool.textContent = data[attributeLang].mySchool
-
-        techFormationTitle.textContent = data[attributeLang].techFormationTitle
-        techormationContent.textContent = data[attributeLang].techormationContent 
-        
-        coursesTitle.textContent = data[attributeLang].coursesTitle
-        
-        objectiveTitle.textContent = data[attributeLang].objectiveTitle
-
-        objectiveContent.textContent = data[attributeLang].objectiveContent
-        
-        projTitle.textContent = data[attributeLang].projTitle
-        
-        projContent.textContent = data[attributeLang].projContent
+        //passar só o attributeLang
+        changeLanguage(attributeLang)
         
     })
 });
+
+const changeLanguage = (attributeLang) => {
+
+    portfolio.textContent = data[attributeLang].portfolio
+    resume.textContent = data[attributeLang].resume
+    contact.textContent = data[attributeLang].contact
+
+
+    pageTitleInHeader.innerHTML = data[attributeLang].pageTitleInHeader
+
+    pageTitleContent.innerHTML = data[attributeLang].pageTitleContent
+
+    WhoIm.textContent = data[attributeLang].WhoIm
+    myProj.textContent = data[attributeLang].myProj
+
+    meTitle.textContent = data[attributeLang].meTitle
+    meContent.textContent = data[attributeLang].meContent
+    
+    acFormationTitle.textContent = data[attributeLang].acFormationTitle
+    acFormationContent.textContent = data[attributeLang].acFormationContent
+    mySchool.textContent = data[attributeLang].mySchool
+
+    techFormationTitle.textContent = data[attributeLang].techFormationTitle
+    techormationContent.textContent = data[attributeLang].techormationContent 
+    
+    coursesTitle.textContent = data[attributeLang].coursesTitle
+    
+    objectiveTitle.textContent = data[attributeLang].objectiveTitle
+
+    objectiveContent.textContent = data[attributeLang].objectiveContent
+    
+    projTitle.textContent = data[attributeLang].projTitle
+    cd
+    projContent.textContent = data[attributeLang].projContent
+}
+
 const data =
 {
 	"English":

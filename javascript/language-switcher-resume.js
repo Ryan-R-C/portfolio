@@ -26,17 +26,22 @@ const courses = document.querySelector("#courses")
 Como fazer para salvar ele durante o uso do site?
 Salvar é simples, mas usar é outra coisa
 
-
-
+salvar o id no localStorage, 
+sempre que for mudado alterar lá
+pegar o elemento pelo id
+    fazendo isso pegar suas propriedades para alterar
+        atributeId, attributeLang
+fazendo assim que sempre quando for recarregado alterar a linguagem
 */
 link.forEach(element => {
     element.addEventListener('click', () => {
         
         const attributeLang = element.getAttribute("Language")//It gets the actual language presented on the page
         const attributeId = element.getAttribute("id")//The it that will make the flag change
-
         const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
         
+        localStorage.setItem("selectedLang", attributeId)
+        console.log(attributeId)
 
         changeHtmlLang(HTMLlang)
 
@@ -347,4 +352,31 @@ const dataCourses =
     "<li>Alura – Rest con NodeJS: API con Express e MySQL – studiando</li>",
     "<li>Equaciona – Calcolo – studiando</li>"
 ]
+}
+
+
+const localStorageLang = localStorage.getItem("selectedLang")
+if(localStorageLang){
+    const element = document.querySelector(`#${localStorageLang}`)
+
+     
+    const attributeLang = element.getAttribute("Language")//It gets the actual language presented on the page
+    const attributeId = element.getAttribute("id")//The it that will make the flag change
+    const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
+    
+    localStorage.setItem("selectedLang", attributeId)
+    console.log(attributeId)
+
+    changeHtmlLang(HTMLlang)
+
+    /*--------------
+    Resume Atributes
+    --------------*/
+
+    changeFlag(attributeLang, attributeId)
+
+    changeLanguage(attributeLang)
+
+    changeCourses(attributeLang)
+    
 }

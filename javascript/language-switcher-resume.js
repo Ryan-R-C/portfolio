@@ -38,19 +38,16 @@ link.forEach(element => {
         const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
         document.documentElement.setAttribute("lang", `${HTMLlang}`)
 
-        courses.innerHTML = ""                        //Removes all content from courses
-        courses.innerHTML = dataCourses[attributeLang].join(' ')//Add all content in specific language in courses
-
-        selectedLang.textContent = `${attributeLang}`
-
-        selectFlag.src = `./img/${attributeId}.png`
 
         /*--------------
         Resume Atributes
         --------------*/
 
-        //passar só o attributeLang
+        changeFlag(attributeLang, attributeId)
+
         changeLanguage(attributeLang)
+
+        changeCourses(attributeLang)
         
     })
 });
@@ -86,8 +83,20 @@ const changeLanguage = (attributeLang) => {
     objectiveContent.textContent = data[attributeLang].objectiveContent
     
     projTitle.textContent = data[attributeLang].projTitle
-    cd
+    
     projContent.textContent = data[attributeLang].projContent
+}
+
+const changeFlag = (attributeLang, attributeId) => {
+    selectedLang.textContent = `${attributeLang}`
+
+    selectFlag.src = `./img/${attributeId}.png`
+}
+
+const changeCourses = (attributeLang) => {
+    courses.innerHTML = ""                        //Removes all content from courses
+    courses.innerHTML = dataCourses[attributeLang].join(' ')//Add all content in specific language in courses
+
 }
 
 const data =

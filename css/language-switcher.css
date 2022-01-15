@@ -32,6 +32,7 @@ Starts the language switcher
     transform: translateX(27%);
     top: 0;
     right: 0;
+    z-index: 1;
 }
 #language:hover ul{
     display: block;

@@ -33,6 +33,19 @@ pegar o elemento pelo id
         atributeId, attributeLang
 fazendo assim que sempre quando for recarregado alterar a linguagem
 */
+
+
+const handleSetLang = (HTMLlang, attributeId, attributeLang) => {
+    changeHtmlLang(HTMLlang)
+
+    changeFlag(attributeLang, attributeId)
+
+    changeLanguage(attributeLang)
+
+    changeCourses(attributeLang)
+}
+
+
 link.forEach(element => {
     element.addEventListener('click', () => {
         
@@ -41,19 +54,11 @@ link.forEach(element => {
         const HTMLlang = element.getAttribute("HTMLlang")//Get the HTML lang to change
         
         localStorage.setItem("selectedLang", attributeId)
-        console.log(attributeId)
-
-        changeHtmlLang(HTMLlang)
-
+        
         /*--------------
         Resume Atributes
         --------------*/
-
-        changeFlag(attributeLang, attributeId)
-
-        changeLanguage(attributeLang)
-
-        changeCourses(attributeLang)
+        handleSetLang(HTMLlang, attributeId, attributeLang)
         
     })
 });
@@ -397,16 +402,6 @@ const dataCourses =
 
 
 const localStorageLang = localStorage.getItem("selectedLang")
-
-const handleSetLang = (HTMLlang, attributeId, attributeLang) => {
-    changeHtmlLang(HTMLlang)
-
-    changeFlag(attributeLang, attributeId)
-
-    changeLanguage(attributeLang)
-
-    changeCourses(attributeLang)
-}
 
 if(localStorageLang){
     const element = document.querySelector(`#${localStorageLang}`)

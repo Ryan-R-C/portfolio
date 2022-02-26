@@ -397,6 +397,17 @@ const dataCourses =
 
 
 const localStorageLang = localStorage.getItem("selectedLang")
+
+const handleSetLang = (HTMLlang, attributeId, attributeLang) => {
+    changeHtmlLang(HTMLlang)
+
+    changeFlag(attributeLang, attributeId)
+
+    changeLanguage(attributeLang)
+
+    changeCourses(attributeLang)
+}
+
 if(localStorageLang){
     const element = document.querySelector(`#${localStorageLang}`)
 
@@ -408,11 +419,11 @@ if(localStorageLang){
     localStorage.setItem("selectedLang", attributeId)
     console.log(attributeId)
 
-    changeHtmlLang(HTMLlang)
-
+    
     /*--------------
     Resume Atributes
     --------------*/
+    changeHtmlLang(HTMLlang)
 
     changeFlag(attributeLang, attributeId)
 
@@ -420,4 +431,44 @@ if(localStorageLang){
 
     changeCourses(attributeLang)
     
+}
+else{
+    // it is the first time that the user enters in the website it will return its browser language
+    let userRawLang = navigator.language || navigator.userLanguage; 
+    let cleanUserLang = userRawLang.substring(0,2)
+
+    let HTMLlang,
+        Language,
+        attributeId;
+
+    switch (cleanUserLang) {
+        case 'pt':
+            attributeId ='br'
+            HTMLlang="pt-br" 
+            Language="Português"
+            break
+
+        case 'es':
+            attributeId ='es'
+            HTMLlang="es"
+            Language="Español"  
+            break
+
+        case 'it':
+            attributeId ='it'
+            HTMLlang="it" 
+            Language="Italiano" 
+            break
+
+            
+        default:
+        console.log("hahaahaahahahahahahahahahah")
+        attributeId ='us'
+        HTMLlang="en"  
+        Language="English" 
+        break
+      }
+    
+    handleSetLang(HTMLlang, attributeId, Language)
+      
 }

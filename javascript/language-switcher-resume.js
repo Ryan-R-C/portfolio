@@ -423,13 +423,7 @@ if(localStorageLang){
     /*--------------
     Resume Atributes
     --------------*/
-    changeHtmlLang(HTMLlang)
-
-    changeFlag(attributeLang, attributeId)
-
-    changeLanguage(attributeLang)
-
-    changeCourses(attributeLang)
+    handleSetLang(HTMLlang, attributeId, attributeLang) 
     
 }
 else{

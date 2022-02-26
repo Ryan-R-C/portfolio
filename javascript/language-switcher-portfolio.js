@@ -19,6 +19,7 @@ const reactNoteTitle = document.querySelector("#reactNoteTitle")
 const reactNoteContent = document.querySelector("#reactNoteContent")
 const freelaContent = document.querySelector("#freelaContent")
 const infinityScrollContent = document.querySelector("#infinityScrollContent")
+const constalContent = document.querySelector("#constalContent")
 
 
 link.forEach(element => {
@@ -77,6 +78,9 @@ const changeLanguage = (attributeLang) => {
         freelaContent.textContent = data[attributeLang].freelaContent
         
         infinityScrollContent.textContent = data[attributeLang].infinityScrollContent 
+
+        constalContent.textContent = data[attributeLang].constalContent
+
 }
 
 const changeFlag = (attributeLang, attributeId) => {
@@ -129,6 +133,8 @@ const data =
                 "That is my freelancer webpage, In this project not only I show my skills as Front End Dev using JavaScript and CSS animation to make a almost live site, but also a high level design. I am very pround of this repository.",
     "infinityScrollContent":
                 "It is a project that consumes a external API, JSONPlaceholder, and load them as user goes down the page that triggers an animation. And also filter the data as user wants. Good UI and clean Code.",
+	"constalContent":
+                "This is my first finished project as a professional FullStack developer in 42 Dias. I had a unbelivable learning in matter of development and, mainly, team work. I participate, in the beginning just connecting the old backend with the new frontend, but in the course of time I started fixing some issues of both. In frontend, transforming it as fluid and intuitive as it is possible. It was surelly a enormus learning. I still have a affection about this project.",
     },
     "Português":
     {"portfolio":
@@ -172,7 +178,10 @@ const data =
                  "Essa é minha página freelancer, neste projeto não só mostro minhas habilidades como Front End Dev usando JavaScript e animação CSS para fazer um site quase ao vivo, mas também um design de alto nível. Tenho muito orgulho deste repositório.",
     "infinityScrollContent":
                  "É um projeto que consome uma API externa, JSONPlaceholder, e os carrega conforme o usuário desce na página que aciona uma animação. E também filtra os dados conforme o usuário deseja. Boa IU e código limpo.",
-            },
+	"constalContent":
+                "Este é meu primeiro projeto finalizado como desenvolvedor FullStack  profissional na empresa 42 Dias. Tive um aprendizado incrível em questão de desenvolvimento e, principalmente, trabalho em equipe. Eu participei, no começo apenas conectando o backend antigo com o novo frontend, mas com o passar do tempo comecei a corrigir alguns problemas de ambos. No frontend, transformando-o o mais fluido e intuitivo possível. Com certeza foi um aprendizado enorme. Ainda tenho um grande carinho por esse projeto.",
+
+    },
     "Español":
     {"portfolio":
         "Portfolio",
@@ -215,6 +224,8 @@ const data =
                  "Esa es mi página web para autónomos. En este proyecto, no solo demuestro mis habilidades como Front End Dev usando JavaScript y animación CSS para hacer un sitio casi en vivo, sino también un diseño de alto nivel. Estoy muy orgulloso de este repositorio.",
     "infinityScrollContent":
                  "Es un proyecto que consume una API externa, JSONPlaceholder, y las carga a medida que el usuario baja por la página que activa una animación. Y también filtra los datos según lo desee el usuario. Buena interfaz de usuario y código limpio.",
+	"constalContent":
+                "Este es mi primer proyecto terminado como desarrollador FullStack profesional en 42 Dias. Tuve un aprendizaje increíble en materia de desarrollo y, sobre todo, de trabajo en equipo. Participo, al principio simplemente conectando el antiguo backend con el nuevo frontend, pero con el tiempo comencé a solucionar algunos problemas de ambos. En frontend, transformándolo lo más fluido e intuitivo posible. Seguramente fue un aprendizaje enorme. Todavía tengo un afecto por este proyecto.",
     },
     "Italiano":
     {"portfolio":
@@ -257,7 +268,9 @@ const data =
                  "Questa è la mia pagina web da freelance, in questo progetto non solo mostro le mie abilità come Front End Dev utilizzando JavaScript e l'animazione CSS per creare un sito quasi live, ma anche un design di alto livello. Sono molto orgoglioso di questo repository.",
     "infinityScrollContent":
                  "È un progetto che utilizza un'API esterna, JSONPlaceholder, e li carica quando l'utente scende nella pagina che attiva un'animazione. E filtra anche i dati come desidera l'utente. Buona interfaccia utente e codice pulito.",
-            }    
+	"constalContent":
+                "Questo è il mio primo progetto finito come sviluppatore FullStack professionista in 42 Dias. Ho avuto un apprendimento incredibile in materia di sviluppo e, principalmente, lavoro di squadra. Partecipo, all'inizio collegando solo il vecchio backend con il nuovo frontend, ma nel corso del tempo ho iniziato a risolvere alcuni problemi di entrambi. Nel frontend, trasformandolo il più fluido e intuitivo possibile. È stato sicuramente un enorme apprendimento. Ho ancora un affetto per questo progetto.",
+    }    
 }
 
 const localStorageLang = localStorage.getItem("selectedLang")
